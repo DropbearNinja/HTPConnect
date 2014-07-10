@@ -13,7 +13,9 @@
 		
 <script>
 function LoadSB() {
-$("#myiframe").attr("src", "http://127.0.0.1:8081");
+$("#myiframe").attr("src", "http://htpc:8081");
+$("#main").css( "visibility", "hidden" );
+$("#subtitle").css( "visibility", "hidden" );
 }
 function LoadSAB() {
 $("#myiframe").attr("src", "http://127.0.0.1:8082");
@@ -27,10 +29,8 @@ $("#myiframe").load("http://127.0.0.1:8083");
 
 
 <body>
- 
-<div id="myiframe-wrap">
-    <iframe id="myiframe" src="" border="0"></iframe>
-</div>
+<div id="myiframe-wrap"></div>
+
 
         <!-- Pushy Menu -->
         <nav class="pushy pushy-close">
@@ -50,17 +50,13 @@ $("#myiframe").load("http://127.0.0.1:8083");
 
         <!-- Your Content -->
         <div id="container">
-				
-            <div class="menu-btn">Menu</div> <!-- Menu Button -->
-			<div class="main">WELCOME<br>
-			<div class="subtitle">HTPConnect</div>
+		    <div class="menu-btn">Menu</div> <!-- Menu Button -->
 
+				<iframe id="myiframe" src="" border="0"></iframe>
+
+			<div id="main">WELCOME</div><br>
+			<div id="subtitle">HTPConnect</div>
 		</div>		
 
-
-		
-
-
-</div>
 </body>
 </html>
