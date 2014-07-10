@@ -67,6 +67,12 @@ table{
 	color: #FFFFFF;
 	text-align: center;
 	cursor: pointer;
+	width:100px;
+	height:20px;
+	-webkit-border-radius: 0px 0px 99px 99px;
+	-moz-border-radius: 0px 0px 99px 99px;
+	border-radius: 0px 0px 99px 99px;
+
 }
 
 .menu-btn:hover{
