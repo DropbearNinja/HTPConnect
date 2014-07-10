@@ -1,5 +1,6 @@
 import os, os.path
 import cherrypy
+import settings
 
 class HTPConnect(object):
     @cherrypy.expose
@@ -7,4 +8,10 @@ class HTPConnect(object):
 	return file('index.html')
 
 
+
+
 cherrypy.quickstart(HTPConnect(), '/', 'server.conf')
+
+
+
+
