@@ -1,0 +1,66 @@
+<html>
+<head>
+
+<title>HTPConnect</title>
+
+		<link href="/static/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/normalize.css">
+		
+		<!--Menu-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script src="/static/js/vendor/modernizr.custom.71422.js"></script>
+		<script src="/static/js/pushy.min.js"></script>
+		
+<script>
+function LoadSB() {
+$("#myiframe").attr("src", "http://htpc:8081");
+}
+function LoadSAB() {
+$("#myiframe").attr("src", "http://127.0.0.1:8082");
+}
+function LoadCP() {
+$("#myiframe").load("http://127.0.0.1:8083");
+}
+</script>
+		
+</head>
+
+
+<body>
+ 
+<div id="myiframe-wrap">
+    <iframe id="myiframe" src="" border="0"></iframe>
+</div>
+
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-close">
+		
+			<table style="width=100%">
+				<tr>
+					<td><a href="#" onclick="LoadSB()">SickBeard</a></td>
+					<td><a href="#" onclick="LoadSAB()">SABnzbd</a></td>
+					<td><a href="#" onclick="LoadCP()">CouchPotato</a></td>
+				</tr>
+			</table>
+		
+        </nav>
+
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+
+        <!-- Your Content -->
+        <div id="container">
+				
+            <div class="menu-btn">Menu</div> <!-- Menu Button -->
+			<div class="main">WELCOME<br>
+			<div class="subtitle">HTPConnect</div>
+			
+		</div>		
+
+
+		
+
+
+</div>
+</body>
+</html>
