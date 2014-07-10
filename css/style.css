@@ -88,9 +88,9 @@ table{
     background: #009300;
     font-size: 0.9em;
     font-weight: bold;
-    overflow: auto;
 	padding-top:10px;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
+	overflow-y:hidden;
 }
 
 .pushy a{
@@ -100,6 +100,7 @@ table{
     text-decoration: none;
 	vertical-align: middle;
 	font-weight: bold;
+
 }
 
 .pushy a:hover{
