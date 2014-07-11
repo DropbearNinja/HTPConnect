@@ -80,6 +80,10 @@ function DeleteRow(rowID) {
     table.deleteRow(row.rowIndex);
 }
 
+function saveColours() {
+
+}
+
 </script>
 		
 </head>
@@ -139,36 +143,32 @@ function DeleteRow(rowID) {
 					<tr>
 						<td></td>
 						<td><a href="#" onclick="AddRow()"><img src="/static/images/add.gif" height="12" width="12" style="padding-top: 3px; padding-left: 3px"></a></td>
-						<td></td>
+						<td style="text-align:right"><button id="buttonSettingsMenu">Save</button></td>
 						<td></td>
 					</tr>
 					</table>
-					
-					
 					<br>
 					<br>
-					
-					
-						
-
 						<br><br>
+                    <form id="settings-colour">
 					<table id="colourtable" class="input-list glow clearfix">
 					<tr>
 						<td style="width: 20%;text-align:right">Colours:</td>
 						<td style="width: 30%">Menu background:</td>
 						<td style="width: 50%"><input type="text" value="#009300"></td>
-
 					<tr>
 						<td></td>
 						<td>Menu Text:</td>
 						<td><input type="text" value="#FFFFFF"></td>
-
 					</tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align:right"><button id="buttonColourMenu">Save</button></td>
+                    </tr>
 				</table>
-				
+                </form>
 			</div>
-			
-		</div>		
-
+		</div>
 </body>
 </html>
