@@ -46,7 +46,7 @@ function AddRow() {
 
 $('#settingstable').find('tr').click( function(){
   alert('You clicked row '+ ($(this).index()+1) );
-  
+
   $('#settingstable tr:last').before('<tr><td></td><td><input type="text" value="Menu Item 3"></td><td><input type="text" value="Address"></td><tr>');
 });
 

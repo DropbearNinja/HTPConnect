@@ -26,16 +26,16 @@ $(function() {
 
 	function openPushyFallback(){
 		body.addClass(pushyActiveClass);
-		pushy.animate({left: "0px"}, menuSpeed);
-		container.animate({left: menuWidth}, menuSpeed);
-		push.animate({left: menuWidth}, menuSpeed); //css class to add pushy capability
+		pushy.animate({top: "0px"}, menuSpeed);
+		container.animate({top: menuWidth}, menuSpeed);
+		push.animate({top: menuWidth}, menuSpeed); //css class to add pushy capability
 	}
 
 	function closePushyFallback(){
 		body.removeClass(pushyActiveClass);
-		pushy.animate({left: "-" + menuWidth}, menuSpeed);
-		container.animate({left: "0px"}, menuSpeed);
-		push.animate({left: "0px"}, menuSpeed); //css class to add pushy capability
+		pushy.animate({top: "-" + menuWidth}, menuSpeed);
+		container.animate({top: "0px"}, menuSpeed);
+		push.animate({top: "0px"}, menuSpeed); //css class to add pushy capability
 	}
 
 	if(Modernizr.csstransforms3d){
@@ -49,7 +49,7 @@ $(function() {
 		});
 	}else{
 		//jQuery fallback
-		pushy.css({left: "-" + menuWidth}); //hide menu by default
+		pushy.css({top: "-" + menuWidth}); //hide menu by default
 		container.css({"overflow-x": "hidden"}); //fixes IE scrollbar issue
 
 		//keep track of menu state (open/close)
