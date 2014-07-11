@@ -39,9 +39,6 @@ $("#settings").css( "visibility", "visible" );
 }
 
 function AddRow() {
-    //$('#settingstable tr:last').before('<tr><td></td><td><input type="text" value="Menu Item"></td><td><input type="text" value="Address"></td><td><a href="#" onclick="DeleteRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td></tr>')
-    
-    
     // Find a <table> element with id="myTable":
     var table = document.getElementById("settingstable");
     var rowCount = table.rows.length - 1; // Table has additional row at bottom which shows the add button
@@ -81,8 +78,18 @@ function DeleteRow(rowID) {
 }
 
 function saveColours() {
-
+    var MenuBGColour = document.getElementById("txtMenuBgColour");
+    var TextColour = document.getElementById("MenuTextColour");
+    
 }
+
+$.ajax({
+       url: "/settings/get?key=MenuBGColour",
+       cache: false
+       })
+       .done(function( html ) {
+             document.getElementById("txtMenuBgColour").value = html;
+             });
 
 </script>
 		
@@ -155,11 +162,11 @@ function saveColours() {
 					<tr>
 						<td style="width: 20%;text-align:right">Colours:</td>
 						<td style="width: 30%">Menu background:</td>
-						<td style="width: 50%"><input type="text" value="#009300"></td>
+						<td style="width: 50%"><input type="text" id="txtMenuBgColour"></td>
 					<tr>
 						<td></td>
 						<td>Menu Text:</td>
-						<td><input type="text" value="#FFFFFF"></td>
+						<td><input type="text" value="#FFFFFF" id="MenuTextColour"></td>
 					</tr>
                     <tr>
                         <td></td>
@@ -170,5 +177,6 @@ function saveColours() {
                 </form>
 			</div>
 		</div>
+        
 </body>
 </html>

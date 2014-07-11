@@ -1,7 +1,6 @@
 import os, os.path
 import cherrypy
 import json
-from cherrypy.lib.httputil import parse_query_string
 
 
 class Settings:
@@ -22,7 +21,7 @@ class Settings:
         key = cherrypy.request.params.get("key")
 
         if key in Settings.dictionary:
-            return "Found " + key + " Value: " + Settings.dictionary[key]
+            return Settings.dictionary[key]
         
         else:
             return "Could not find key"
@@ -39,8 +38,8 @@ class Settings:
                 Settings.dictionary = data
                 return str(Settings.dictionary)
         else:
-            self.writeDefaultSettings()
-            self.readSettings()
+            self.writedefaultsettings()
+            self.readsettings()
 
     @cherrypy.expose
     def writesettings(self):
@@ -49,7 +48,7 @@ class Settings:
 
     @cherrypy.expose
     def writedefaultsettings(self):
-        data = { 'Settings': 'Default' }
+        data = { 'Settings': 'Default', 'MenuBGColour': '#009300' }
         with open('settings.ini', 'w') as outfile:
             json.dump(data, outfile)
         return 'Default Set'
