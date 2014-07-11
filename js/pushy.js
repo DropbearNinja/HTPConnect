@@ -15,7 +15,7 @@ $(function() {
 		pushClass = "push-push", //css class to add pushy capability
 		menuBtn = $('.menu-btn, .pushy a'), //css classes to toggle the menu
 		menuSpeed = 200, //jQuery fallback menu speed
-		menuWidth = pushy.width() + "px"; //jQuery fallback menu width
+		menuHeight = pushy.height() + "px"; //jQuery fallback menu width
 
 	function togglePushy(){
 		body.toggleClass(pushyActiveClass); //toggle site overlay
@@ -27,13 +27,13 @@ $(function() {
 	function openPushyFallback(){
 		body.addClass(pushyActiveClass);
 		pushy.animate({top: "0px"}, menuSpeed);
-		container.animate({top: menuWidth}, menuSpeed);
-		push.animate({top: menuWidth}, menuSpeed); //css class to add pushy capability
+		container.animate({top: menuHeight}, menuSpeed);
+		push.animate({top: menuHeight}, menuSpeed); //css class to add pushy capability
 	}
 
 	function closePushyFallback(){
 		body.removeClass(pushyActiveClass);
-		pushy.animate({top: "-" + menuWidth}, menuSpeed);
+		pushy.animate({top: "-" + menuHeight}, menuSpeed);
 		container.animate({top: "0px"}, menuSpeed);
 		push.animate({top: "0px"}, menuSpeed); //css class to add pushy capability
 	}
@@ -49,7 +49,7 @@ $(function() {
 		});
 	}else{
 		//jQuery fallback
-		pushy.css({top: "-" + menuWidth}); //hide menu by default
+		pushy.css({top: "-" + menuHeight}); //hide menu by default
 		container.css({"overflow-x": "hidden"}); //fixes IE scrollbar issue
 
 		//keep track of menu state (open/close)
