@@ -42,15 +42,6 @@ function AddRow() {
 $('#settingstable tr:last').before('<tr><td></td><td><input type="text" value="Menu Item"></td><td><input type="text" value="Address"></td><td><a href="#" onclick="DeleteRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td></tr>')
 }
 
-$('settingstable td').click(function(){
-    $(this).parent().remove();
-});
-
-$('settingstable td img.DeleteRow').click(function(){
-    $(this).parent().parent().remove();
-});
-
-
 
 </script>
 		
@@ -118,7 +109,7 @@ $('settingstable td img.DeleteRow').click(function(){
 						<td></td>
 						<td><input type="text" value="Menu Item"></td>
 						<td><input type="text" value="Address"></td>
-						<td><a href="#" class="DeleteRow"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
+						<td><a href="#" onclick="DeleteRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
 					</tr>
 					<tr>
 						<td></td>
