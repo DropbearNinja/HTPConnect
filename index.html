@@ -42,6 +42,10 @@ function AddRow() {
 $('#settingstable tr:last').before('<tr><td></td><td><input type="text" value="Menu Item"></td><td><input type="text" value="Address"></td><td><a href="#" onclick="DeleteRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td></tr>')
 }
 
+function DelRow() {
+    var table = document.getElementById('settingstable');
+    table.deleteRow(1);
+}
 
 </script>
 		
@@ -97,19 +101,19 @@ $('#settingstable tr:last').before('<tr><td></td><td><input type="text" value="M
 						<td style="width: 20%;text-align:right">Menu Items:</td>
 						<td style="width: 30%"><input type="text" value="Menu Item"></td>
 						<td style="width: 30%"><input type="text" value="Address"></td>
-						<td><a href="#" onclick="DeleteRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
+						<td><a href="#" onclick="DelRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td><input type="text" value="Menu Item"></td>
 						<td><input type="text" value="Address"></td>
-						<td><a href="#" onclick="DeleteRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
+						<td><a href="#" onclick="DelRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td><input type="text" value="Menu Item"></td>
 						<td><input type="text" value="Address"></td>
-						<td><a href="#" onclick="DeleteRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
+						<td><a href="#" onclick="DelRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
 					</tr>
 					<tr>
 						<td></td>
