@@ -9,7 +9,7 @@
 		<!--Menu-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
         <script src="/static/js/vendor/modernizr.custom.71422.js"></script>
-		<script src="/static/js/pushy.min.js"></script>
+		<script src="/static/js/pushy.js"></script>
 		
 <script>
 function LoadSB() {
@@ -37,6 +37,21 @@ $("#myiframe").attr("src", "");
 $("#landing").css( "visibility", "hidden" );
 $("#settings").css( "visibility", "visible" );
 }
+
+
+
+
+
+function AddRow() {
+
+$('#settingstable').find('tr').click( function(){
+  alert('You clicked row '+ ($(this).index()+1) );
+  
+  $('#settingstable tr:last').before('<tr><td></td><td><input type="text" value="Menu Item 3"></td><td><input type="text" value="Address"></td><tr>');
+});
+
+}
+
 </script>
 		
 </head>
@@ -100,7 +115,7 @@ $("#settings").css( "visibility", "visible" );
 						<td><input type="text" value="Address"></td>
 					<tr>
 						<td></td>
-						<td><img src="/static/images/add.gif" height="15" width="15"></td>
+						<td><a href="#" onclick="AddRow()"><img src="/static/images/add.gif" height="15" width="15"></s></td>
 					<tr>
 						<td><br></td>
 					<tr>
