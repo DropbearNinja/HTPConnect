@@ -38,4 +38,4 @@ class Settings(object):
         return 'Default Set'
 
 
-cherrypy.tree.mount(Settings(), '/settings')
+cherrypy.tree.mount(Settings(), '/settings', 'server.conf')

@@ -13,15 +13,29 @@
 		
 <script>
 function LoadSB() {
-$("#myiframe").attr("src", "http://htpc:8081");
-$("#main").css( "visibility", "hidden" );
-$("#subtitle").css( "visibility", "hidden" );
+$("#myiframe").attr("src", "http://sickbeard.com/");
+$("#settings").css( "visibility", "hidden" );
+$("#landing").css( "visibility", "hidden" );
 }
 function LoadSAB() {
-$("#myiframe").attr("src", "http://127.0.0.1:8082");
+$("#myiframe").attr("src", "http://sabnzbd.org/");
+$("#settings").css( "visibility", "hidden" );
+$("#landing").css( "visibility", "hidden" );
 }
 function LoadCP() {
-$("#myiframe").load("http://127.0.0.1:8083");
+$("#myiframe").attr("src", "https://couchpota.to/");
+$("#settings").css( "visibility", "hidden" );
+$("#landing").css( "visibility", "hidden" );
+}
+function LoadXBMC() {
+$("#myiframe").attr("src", "http://xbmc.org/");
+$("#settings").css( "visibility", "hidden" );
+$("#landing").css( "visibility", "hidden" );
+}
+function LoadSettings() {
+$("#myiframe").attr("src", "");
+$("#landing").css( "visibility", "hidden" );
+$("#settings").css( "visibility", "visible" );
 }
 </script>
 		
@@ -29,17 +43,21 @@ $("#myiframe").load("http://127.0.0.1:8083");
 
 
 <body>
-<div id="myiframe-wrap"></div>
-
 
         <!-- Pushy Menu -->
         <nav class="pushy pushy-close">
 		
-			<table style="width=100%">
+			<table id="menu">
 				<tr>
 					<td><a href="#" onclick="LoadSB()">SickBeard</a></td>
-					<td><a href="#" onclick="LoadSAB()">SABnzbd</a></td>
-					<td><a href="#" onclick="LoadCP()">CouchPotato</a></td>
+					<td><a href="#" onclick="LoadSAB()">sabnzbd</a></td>
+					<td><a href="#" onclick="LoadCP()">Couchpotato</a></td>
+					<td><a href="#" onclick="LoadXBMC()">XBMC</a></td>
+				</tr>
+			</table>
+			<table id="settingsmenu">
+				<tr>
+					<td><a href="#" onclick="LoadSettings()"><img src="/static/images/settings.gif" height="20" width="20"></a></td>
 				</tr>
 			</table>
 		
@@ -48,14 +66,42 @@ $("#myiframe").load("http://127.0.0.1:8083");
         <!-- Site Overlay -->
         <div class="site-overlay"></div>
 
-        <!-- Your Content -->
-        <div id="container">
-		    <div class="menu-btn">Menu</div> <!-- Menu Button -->
+        
+        <div id="container">	
+		<!-- Your Content -->	
+		
+			<!-- Menu Button -->
+		    <div class="menu-btn">Menu</div> 	
 
-				<iframe id="myiframe" src="" border="0"></iframe>
+			<!-- Frame -->
+			<iframe id="myiframe" src="" border="0"></iframe> 
 
-			<div id="main">WELCOME</div><br>
-			<div id="subtitle">HTPConnect</div>
+			<!-- landing -->
+			<div id="landing">
+				<div id="heading">WELCOME</div><br>
+				<div id="subtitle">HTPConnect</div>
+			</div>
+			
+			<!-- settings -->
+			<div id="settings">
+				<div id="heading">SETTINGS</div><br>
+				<table id="settingstable">
+					<tr>
+						<td>Menu Items:</td>
+						<td><input type="text" value="Menu Item 1"></td>
+						<td><input type="text" value="Address"></td>
+					<tr>
+						<td></td>
+						<td><input type="text" value="Menu Item 2"></td>
+						<td><input type="text" value="Address"></td>
+					<tr>
+						<td></td>
+						<td><input type="text" value="Menu Item 3"></td>
+						<td><input type="text" value="Address"></td>
+					</tr>
+				</table>
+			</div>
+			
 		</div>		
 
 </body>
