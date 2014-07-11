@@ -7,13 +7,13 @@
         <link rel="stylesheet" href="/static/css/normalize.css">
 		
 		<!--Menu-->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
         <script src="/static/js/vendor/modernizr.custom.71422.js"></script>
 		<script src="/static/js/pushy.js"></script>
 		
 <script>
 function LoadSB() {
-$("#myiframe").attr("src", "http://sickbeard.com/");
+$("#myiframe").attr("src", "http://192.168.1.3:8081");
 $("#settings").css( "visibility", "hidden" );
 $("#landing").css( "visibility", "hidden" );
 }
@@ -41,7 +41,6 @@ $("#settings").css( "visibility", "visible" );
 function AddRow() {
 $('#settingstable tr:last').before('<tr><td></td><td><input type="text" value="Menu Item"></td><td><input type="text" value="Address"></td><td><a href="#" onclick="DeleteRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td></tr>')
 }
-
 
 </script>
 		
@@ -80,7 +79,7 @@ $('#settingstable tr:last').before('<tr><td></td><td><input type="text" value="M
 		    <div class="menu-btn"><img src="/static/images/menu.gif" height="18" width="18"></div> 	
 
 			<!-- Frame -->
-			<iframe id="myiframe" src="" border="0"></iframe> 
+			<iframe id="myiframe" src="" border="0"><div id="divpage"></div></iframe> 
 
 			<!-- landing -->
 			<div id="landing">
