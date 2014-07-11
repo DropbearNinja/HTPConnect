@@ -38,19 +38,19 @@ $("#landing").css( "visibility", "hidden" );
 $("#settings").css( "visibility", "visible" );
 }
 
-
-
-
-
 function AddRow() {
-$('#settingstable').find('tr').click( function(){
-  alert('You clicked row '+ ($(this).index()+1) );
+$('#settingstable tr:last').before('<tr><td></td><td><input type="text" value="Menu Item"></td><td><input type="text" value="Address"></td><td><a href="#" onclick="DeleteRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td></tr>')
+}
+
+$('settingstable td').click(function(){
+    $(this).parent().remove();
 });
 
-$('#settingstable tr:last').before('<tr><td></td><td><input type="text" value="Menu Item 3"></td><td><input type="text" value="Address"></td><tr>');
+$('settingstable td img.DeleteRow').click(function(){
+    $(this).parent().parent().remove();
+});
 
 
-}
 
 </script>
 		
@@ -100,32 +100,53 @@ $('#settingstable tr:last').before('<tr><td></td><td><input type="text" value="M
 			<!-- settings -->
 			<div id="settings">
 				<div style="font-size: 40px">SETTINGS</div><br>
-				<table id="settingstable" class="input-list style-1 clearfix">
+				
+				<table id="settingstable" class="input-list glow clearfix">
 					<tr>
-						<td style="width: 100px;text-align:right">Menu Items:</td>
-						<td><input type="text" value="Menu Item 1"></td>
-						<td><input type="text" value="Address"></td>
-					<tr>
-						<td></td>
-						<td><input type="text" value="Menu Item 2"></td>
-						<td><input type="text" value="Address"></td>
-					<tr>
-						<td></td>
-						<td><input type="text" value="Menu Item 3"></td>
-						<td><input type="text" value="Address"></td>
+						<td style="width: 20%;text-align:right">Menu Items:</td>
+						<td style="width: 30%"><input type="text" value="Menu Item"></td>
+						<td style="width: 30%"><input type="text" value="Address"></td>
+						<td><a href="#" onclick="DeleteRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
+					</tr>
 					<tr>
 						<td></td>
-						<td><a href="#" onclick="AddRow()"><img src="/static/images/add.gif" height="15" width="15"></s></td>
+						<td><input type="text" value="Menu Item"></td>
+						<td><input type="text" value="Address"></td>
+						<td><a href="#" onclick="DeleteRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
+					</tr>
 					<tr>
-						<td><br></td>
+						<td></td>
+						<td><input type="text" value="Menu Item"></td>
+						<td><input type="text" value="Address"></td>
+						<td><a href="#" class="DeleteRow"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
+					</tr>
 					<tr>
-						<td style="width: 100px;text-align:right">Colours:</td>
-						<td>Menu background:</td>
-						<td><input type="text" value="#009300"></td>
+						<td></td>
+						<td><a href="#" onclick="AddRow()"><img src="/static/images/add.gif" height="12" width="12" style="padding-top: 3px; padding-left: 3px"></a></td>
+						<td></td>
+						<td></td>
+					</tr>
+					</table>
+					
+					
+					<br>
+					<br>
+					
+					
+						
+
+						<br><br>
+					<table id="colourtable" class="input-list glow clearfix">
+					<tr>
+						<td style="width: 20%;text-align:right">Colours:</td>
+						<td style="width: 30%">Menu background:</td>
+						<td style="width: 50%"><input type="text" value="#009300"></td>
+
 					<tr>
 						<td></td>
 						<td>Menu Text:</td>
 						<td><input type="text" value="#FFFFFF"></td>
+
 					</tr>
 				</table>
 				

@@ -66,6 +66,16 @@ html, body{
     margin-right: auto;
 	color: white;
 	padding: 20px;
+	width: 50%;
+}
+
+
+#colourtable {
+    margin-left: auto;
+    margin-right: auto;
+	color: white;
+	padding: 20px;
+	width: 50%;
 }
 
 table{
@@ -95,13 +105,13 @@ input[type="text"]:focus {
 	color: #FFFFFF;
 }
 
-.style-1 input[type="text"] {
+.glow input[type="text"] {
 	padding: 5px;
 	border: solid 0px #FFFFFF;
 	transition: box-shadow 0.2s, border 0.2s;
 }
-.style-1 input[type="text"]:focus,
-.style-1 input[type="text"].focus {
+.glow input[type="text"]:focus,
+.glow input[type="text"].focus {
 	border: solid 0px #FFFFFF;
 	box-shadow: 0 0 5px 2px #66FF33;
 }
