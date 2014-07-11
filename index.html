@@ -1,6 +1,6 @@
 <html>
 <head>
-
+<meta charset="utf-8">
 <title>HTPConnect</title>
 
 		<link href="/static/css/style.css" rel="stylesheet">
@@ -57,7 +57,7 @@ $("#settings").css( "visibility", "visible" );
 			</table>
 			<table id="settingsmenu">
 				<tr>
-					<td><a href="#" onclick="LoadSettings()"><img src="/static/images/settings.gif" height="20" width="20"></a></td>
+					<td><a href="#" onclick="LoadSettings()"><img src="/static/images/settings.gif" height="18" width="18"></a></td>
 				</tr>
 			</table>
 		
@@ -70,7 +70,7 @@ $("#settings").css( "visibility", "visible" );
         <div id="container">	
 		<!-- Your Content -->	
 		
-			<!-- Menu Button -->
+			<!-- Menu Button  -->
 		    <div class="menu-btn"><img src="/static/images/menu.gif" height="18" width="18"></div> 	
 
 			<!-- Frame -->
@@ -85,9 +85,9 @@ $("#settings").css( "visibility", "visible" );
 			<!-- settings -->
 			<div id="settings">
 				<div style="font-size: 40px">SETTINGS</div><br>
-				<table id="settingstable">
+				<table id="settingstable" class="input-list style-1 clearfix">
 					<tr>
-						<td style="width: 100px;">Menu Items:</td>
+						<td style="width: 100px;text-align:right">Menu Items:</td>
 						<td><input type="text" value="Menu Item 1"></td>
 						<td><input type="text" value="Address"></td>
 					<tr>
@@ -99,7 +99,18 @@ $("#settings").css( "visibility", "visible" );
 						<td><input type="text" value="Menu Item 3"></td>
 						<td><input type="text" value="Address"></td>
 					</tr>
+						<td><br></td>
+					<tr>
+						<td style="width: 100px;text-align:right">Colours:</td>
+						<td>Menu background:</td>
+						<td><input type="text" value="#009300"></td>
+					<tr>
+						<td></td>
+						<td>Text:</td>
+						<td><input type="text" value="#FFFFFF"></td>
+					</tr>
 				</table>
+				
 			</div>
 			
 		</div>		
