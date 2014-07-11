@@ -44,29 +44,40 @@ function AddRow() {
     
     // Find a <table> element with id="myTable":
     var table = document.getElementById("settingstable");
-    var rowCount = table.rowcount;
+    var rowCount = table.rows.length - 1; // Table has additional row at bottom which shows the add button
     
     // Create an empty <tr> element and add it to the 1st position of the table:
-    var row = table.insertRow(0);
+    var row = table.insertRow(rowCount);
+    row.setAttribute("id", "Row"+rowCount);
     
     // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
     
     // Add some text to the new cells:
-    cell1.innerHTML = "NEW CELL1";
-    cell2.innerHTML = "NEW CELL2";
-    cell1.innerHTML = "NEW CELL1";
+    // cell1 is blank
     
+    var element2 = document.createElement("input");
+    element2.type = "text";
+    element2.name="Key" +  rowCount;
+    cell2.appendChild(element2);
     
+    var element3 = document.createElement("input");
+    element3.type = "text";
+    element3.name="Value" +  rowCount;
+    cell3.appendChild(element3);
+
+    cell4.innerHTML = "<a href='#' onclick='DeleteRow(\"Row"+ rowCount + "\")'><img src='/static/images/delete.gif' height='15' width='15'></a>";
     
 }
 
-function DelRow() {
-    var table = document.getElementById('settingstable');
+function DeleteRow(rowID) {
+    var table = document.getElementById("settingstable");
+    var row = document.getElementById(rowID);
     
-    table.deleteRow
+    table.deleteRow(row.rowIndex);
 }
 
 </script>
@@ -119,15 +130,15 @@ function DelRow() {
 				<div style="font-size: 40px">SETTINGS</div><br>
 				
 				<table id="settingstable" class="input-list glow clearfix">
-					<tr>
+					<tr id="Row0">
 						<td style="width: 20%;text-align:right">Menu Items:</td>
-						<td style="width: 30%"><input type="text" value="Menu Item"></td>
-						<td style="width: 30%"><input type="text" value="Address"></td>
-						<td><a href="#" onclick="DelRow()"><img src="/static/images/delete.gif" height="15" width="15"></a></td>
+						<td style="width: 30%"><input type="text" value="Menu Item" id="Key0"></td>
+						<td style="width: 30%"><input type="text" value="Address" id="Value0"></td>
+						<td></a></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td id="1"><a href="#" onclick="AddRow()"><img src="/static/images/add.gif" height="12" width="12" style="padding-top: 3px; padding-left: 3px"></a></td>
+						<td><a href="#" onclick="AddRow()"><img src="/static/images/add.gif" height="12" width="12" style="padding-top: 3px; padding-left: 3px"></a></td>
 						<td></td>
 						<td></td>
 					</tr>
