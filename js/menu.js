@@ -1,5 +1,7 @@
 function LoadSB() {
-    $("#myiframe").attr("src", "http://192.168.1.3:8081");
+    /*$("#myiframe").attr("src", ""); */
+    //LoadFrame("http://192.168.0.53:8080");
+    getHTML("http://www.iinet.net.au");
     $("#settings").css( "visibility", "hidden" );
     $("#landing").css( "visibility", "hidden" );
 }
@@ -24,3 +26,20 @@ function LoadSettings() {
     $("#settings").css( "visibility", "visible" );
 }
 
+function LoadFrame(src) {
+    $.post(src, "", function(data, status){
+           UpdateFrame(data);
+           });
+}
+
+function getHTML(exturl) {
+    var url = "/proxy/getHTML?url=" + exturl;
+    $.post(url,"", function(data,status){
+           //alert(data);
+           setmyiframe(data);
+           });
+}
+
+function setmyiframe(data) {
+    document.getElementById("myiframe").contentWindow.document.write(data);
+}
