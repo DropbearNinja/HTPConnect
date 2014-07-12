@@ -39,8 +39,6 @@ function DeleteRow(rowID) {
 function loadColours() {
     get("MenuBGColour", "txtMenuBgColour");
     get("TextColour", "txtMenuTextColour");
-    
-    
 }
 
 function saveColours() {
@@ -49,6 +47,14 @@ function saveColours() {
     
     set("MenuBGColour", MenuBGColour);
     set("TextColour", TextColour);
+    
+    $(".menu-btn").css( "background", MenuBGColour );
+    $(".pushy").css( "background", MenuBGColour );
+    
+    $(".pushy a").css( "color", TextColour );
+    
+    
+
     
 }
 
