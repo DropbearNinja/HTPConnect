@@ -7,9 +7,10 @@ class HTPConnect(object):
     @cherrypy.expose
     def index(self):
 	return file('index.html')
-	
-	def exit(self):  
-		cherrypy.engine.exit()
+
+    @cherrypy.expose
+    def exit(self):
+        cherrypy.engine.exit()
 
 
 cherrypy.quickstart(HTPConnect(), '/', 'server.conf')
