@@ -27,7 +27,6 @@ function AddRow() {
     cell3.appendChild(element3);
     
     cell4.innerHTML = "<a href='#' onclick='DeleteRow(\"Row"+ rowCount + "\")'><img src='/static/images/delete.gif' height='15' width='15'></a>";
-    
 }
 
 function DeleteRow(rowID) {
@@ -37,8 +36,37 @@ function DeleteRow(rowID) {
     table.deleteRow(row.rowIndex);
 }
 
-function saveColours() {
-    var MenuBGColour = document.getElementById("txtMenuBgColour");
-    var TextColour = document.getElementById("MenuTextColour");
+function loadColours() {
+    get("MenuBGColour", "txtMenuBgColour");
+    get("TextColour", "txtMenuTextColour");
     
+    
+}
+
+function saveColours() {
+    var MenuBGColour = document.getElementById("txtMenuBgColour").value;
+    var TextColour = document.getElementById("txtMenuTextColour").value;
+    
+    set("MenuBGColour", MenuBGColour);
+    set("TextColour", TextColour);
+    
+}
+
+function set(key, value) {
+    var url = "/settings/set?key=" + key + "&value=" + value;
+    $.ajax({
+           url: url,
+           cache: false
+           });
+}
+
+function get(key, elementid) {
+    var url = "/settings/get?key=" + key;
+    $.post(url,"", function(data,status){
+           setElement(elementid, data);
+           });
+}
+
+function setElement(elementid, data) {
+    document.getElementById(elementid).value = data;
 }

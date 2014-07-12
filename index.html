@@ -15,16 +15,9 @@
 		
 <script>
 
-
-
-
-$.ajax({
-       url: "/settings/get?key=MenuBGColour",
-       cache: false
-       })
-       .done(function( html ) {
-             document.getElementById("txtMenuBgColour").value = html;
-             });
+$( document ).ready(function() {
+                    loadColours();
+                    });
 
 </script>
 		
@@ -102,12 +95,12 @@ $.ajax({
 					<tr>
 						<td></td>
 						<td>Menu Text:</td>
-						<td><input type="text" value="#FFFFFF" id="MenuTextColour"></td>
+						<td><input type="text" id="txtMenuTextColour"></td>
 					</tr>
                     <tr>
                         <td></td>
                         <td></td>
-                        <td style="text-align:right"><button id="buttonColourMenu">Save</button></td>
+                        <td style="text-align:right"><button id="buttonColourMenu" onclick="saveColours()">Save</button></td>
                     </tr>
 				</table>
                 </form>

@@ -15,6 +15,7 @@ class Settings:
         value = cherrypy.request.params.get("value")
 
         Settings.dictionary[key] = value
+        self.writesettings()
 
     @cherrypy.expose
     def get(self, *args, **kwargs):
