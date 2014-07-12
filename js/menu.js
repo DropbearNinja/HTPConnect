@@ -1,9 +1,9 @@
 function LoadSB() {
     /*$("#myiframe").attr("src", ""); */
     //LoadFrame("http://192.168.0.53:8080");
-    getHTML("http://www.iinet.net.au");
-    $("#settings").css( "visibility", "hidden" );
-    $("#landing").css( "visibility", "hidden" );
+  //  getHTML("http://www.iinet.net.au");
+  //  $("#settings").css( "visibility", "hidden" );
+  //  $("#landing").css( "visibility", "hidden" );
 }
 function LoadSAB() {
     $("#myiframe").attr("src", "http://sabnzbd.org/");
