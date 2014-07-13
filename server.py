@@ -15,7 +15,3 @@ class HTPConnect(object):
         cherrypy.engine.exit()
 		
 cherrypy.quickstart(HTPConnect(), '/', 'server.conf')
-
-
-
-
