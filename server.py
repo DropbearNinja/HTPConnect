@@ -4,7 +4,6 @@ import settings
 import proxy
 import sys
 
-
 class HTPConnect(object):
     @cherrypy.expose
     def index(self):
@@ -13,5 +12,9 @@ class HTPConnect(object):
     @cherrypy.expose
     def exit(self):
         cherrypy.engine.exit()
+		
+	@cherrypy.expose
+	def restart(self):
+		cherrypy.engine.restart()
 		
 cherrypy.quickstart(HTPConnect(), '/', 'server.conf')
