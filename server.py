@@ -3,6 +3,7 @@ import cherrypy
 import settings
 import proxy
 import sys
+import wsgiref.handlers
 
 class HTPConnect(object):
     @cherrypy.expose
@@ -16,5 +17,9 @@ class HTPConnect(object):
 	@cherrypy.expose
 	def restart(self):
 		cherrypy.engine.restart()
+		
+	@cherrypy.expose
+	def sickbeard(self):	
+		cherrypy.InternalRedirect('http://192.168.1.3:8081')
 		
 cherrypy.quickstart(HTPConnect(), '/', 'server.conf')
