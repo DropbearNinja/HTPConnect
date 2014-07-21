@@ -1,0 +1,6 @@
+[Sun Jul 20 17:56:50 2014] [error] (OS 3)The system cannot find the path specified.  : could not open mime types config file C:/private/etc/apache2.2/mime.types.
+Configuration Failed
+[Sun Jul 20 17:59:52 2014] [error] (OS 3)The system cannot find the path specified.  : could not open mime types config file C:/private/etc/apache2.2/mime.types.
+Configuration Failed
+[Sun Jul 20 18:00:06 2014] [error] (OS 3)The system cannot find the path specified.  : could not open mime types config file C:/private/etc/apache2.2/mime.types.
+Configuration Failed
