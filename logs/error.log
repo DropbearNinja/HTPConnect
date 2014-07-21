@@ -1,187 +1,49 @@
-Starting the Apache2.2 service
-The Apache2.2 service is running.
-rmine the server's fully qualified domain name, using 192.168.1.2 for ServerName
-[Sat Jul 19 10:27:37 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Sat Jul 19 10:27:37 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Sat Jul 19 10:27:37 2014] [notice] Parent: Created child process 3844
-httpd.exe: Could not reliably determine the server's fully qualified domain name, using 192.168.1.2 for ServerName
-httpd.exe: Could not reliably determine the server's fully qualified domain name, using 192.168.1.2 for ServerName
-[Sat Jul 19 10:27:37 2014] [notice] Child 3844: Child process is running
-[Sat Jul 19 10:27:37 2014] [notice] Child 3844: Acquired the start mutex.
-[Sat Jul 19 10:27:37 2014] [notice] Child 3844: Starting 64 worker threads.
-[Sat Jul 19 10:27:37 2014] [notice] Child 3844: Starting thread to listen on port 80.
-[Sat Jul 19 10:27:48 2014] [notice] Parent: Received restart signal -- Restarting the server.
-[Sat Jul 19 10:27:48 2014] [notice] Child 3844: Exit event signaled. Child process is ending.
-httpd.exe: Could not reliably determine the server's fully qualified domain name, using 192.168.1.2 for ServerName
-[Sat Jul 19 10:27:48 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Sat Jul 19 10:27:48 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Sat Jul 19 10:27:48 2014] [notice] Parent: Created child process 6884
-httpd.exe: Could not reliably determine the server's fully qualified domain name, using 192.168.1.2 for ServerName
-httpd.exe: Could not reliably determine the server's fully qualified domain name, using 192.168.1.2 for ServerName
-[Sat Jul 19 10:27:48 2014] [notice] Child 6884: Child process is running
-[Sat Jul 19 10:27:49 2014] [notice] Child 3844: Released the start mutex
-[Sat Jul 19 10:27:49 2014] [notice] Child 6884: Acquired the start mutex.
-[Sat Jul 19 10:27:49 2014] [notice] Child 6884: Starting 64 worker threads.
-[Sat Jul 19 10:27:49 2014] [notice] Child 6884: Starting thread to listen on port 80.
-[Sat Jul 19 10:27:50 2014] [notice] Child 3844: All worker threads have exited.
-[Sat Jul 19 10:27:50 2014] [notice] Child 3844: Child process is exiting
-httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
-[Sun Jul 20 06:58:12 2014] [warn] pid file C:/Apache2.2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
-[Sun Jul 20 06:58:12 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Sun Jul 20 06:58:12 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Sun Jul 20 06:58:12 2014] [notice] Parent: Created child process 1892
-httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
-httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
-[Sun Jul 20 06:58:12 2014] [notice] Child 1892: Child process is running
-[Sun Jul 20 06:58:12 2014] [notice] Child 1892: Acquired the start mutex.
-[Sun Jul 20 06:58:12 2014] [notice] Child 1892: Starting 64 worker threads.
-[Sun Jul 20 06:58:12 2014] [notice] Child 1892: Starting thread to listen on port 80.
-[Sun Jul 20 17:22:55 2014] [notice] Parent: Received restart signal -- Restarting the server.
-[Sun Jul 20 17:22:55 2014] [notice] Child 1892: Exit event signaled. Child process is ending.
-httpd.exe: Syntax error on line 1 of C:/Apache2.2/conf/httpd.conf: ServerRoot must be a valid directory
-[Sun Jul 20 17:22:55 2014] [warn] (OS 995)The I/O operation has been aborted because of either a thread exit or an application request.  : winnt_accept: Asynchronous AcceptEx failed.
-[Sun Jul 20 17:22:56 2014] [notice] Child 1892: Released the start mutex
-[Sun Jul 20 17:22:57 2014] [notice] Child 1892: All worker threads have exited.
-[Sun Jul 20 17:22:57 2014] [notice] Child 1892: Child process is exiting
-[Mon Jul 21 19:59:18 2014] [error] (OS 3)The system cannot find the path specified.  : could not open mime types config file C:/private/etc/apache2/mime.types.
-Configuration Failed
-[Mon Jul 21 19:59:56 2014] [error] (OS 3)The system cannot find the path specified.  : could not open mime types config file C:/private/etc/apache2/mime.types.
-Configuration Failed
-[Mon Jul 21 20:00:59 2014] [error] (OS 3)The system cannot find the path specified.  : could not open mime types config file C:/conf/mime.types.
-Configuration Failed
-[Mon Jul 21 20:01:14 2014] [warn] pid file C:/Apache22/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
-[Mon Jul 21 20:01:14 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Mon Jul 21 20:01:14 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Mon Jul 21 20:01:14 2014] [notice] Parent: Created child process 7000
-Apache server interrupted...
-otice] Child 7000: Child process is running
-[Mon Jul 21 20:01:14 2014] [notice] Child 7000: Acquired the start mutex.
-[Mon Jul 21 20:01:14 2014] [notice] Child 7000: Starting 64 worker threads.
-[Mon Jul 21 20:01:14 2014] [notice] Child 7000: Starting thread to listen on port 80.
-[Mon Jul 21 20:01:18 2014] [error] [client 127.0.0.1] client denied by server configuration: C:/Apache22/htdocs/
-[Mon Jul 21 20:01:18 2014] [error] [client 127.0.0.1] client denied by server configuration: C:/Apache22/htdocs/favicon.ico
-[Mon Jul 21 20:01:45 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
-[Mon Jul 21 20:01:45 2014] [notice] Child 7000: Exit event signaled. Child process is ending.
-[Mon Jul 21 20:01:46 2014] [notice] Child 7000: Released the start mutex
-[Mon Jul 21 20:01:47 2014] [notice] Child 7000: All worker threads have exited.
-[Mon Jul 21 20:01:47 2014] [notice] Child 7000: Child process is exiting
-[Mon Jul 21 20:01:47 2014] [notice] Parent: Child process exited successfully.
-[Mon Jul 21 20:02:55 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Mon Jul 21 20:02:55 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Mon Jul 21 20:02:55 2014] [notice] Parent: Created child process 2548
-Apache server interrupted...
-otice] Child 2548: Child process is running
-[Mon Jul 21 20:02:55 2014] [notice] Child 2548: Acquired the start mutex.
-[Mon Jul 21 20:02:55 2014] [notice] Child 2548: Starting 64 worker threads.
-[Mon Jul 21 20:02:55 2014] [notice] Child 2548: Starting thread to listen on port 80.
-[Mon Jul 21 20:02:57 2014] [error] [client 127.0.0.1] File does not exist: C:/Apache22/htdocs/favicon.ico
-[Mon Jul 21 20:03:23 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
-[Mon Jul 21 20:03:23 2014] [notice] Child 2548: Exit event signaled. Child process is ending.
-[Mon Jul 21 20:03:24 2014] [notice] Child 2548: Released the start mutex
-[Mon Jul 21 20:03:25 2014] [notice] Child 2548: All worker threads have exited.
-[Mon Jul 21 20:03:25 2014] [notice] Child 2548: Child process is exiting
-[Mon Jul 21 20:03:25 2014] [notice] Parent: Child process exited successfully.
-[Mon Jul 21 20:03:26 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Mon Jul 21 20:03:26 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Mon Jul 21 20:03:26 2014] [notice] Parent: Created child process 6208
-Apache server interrupted...
-otice] Child 6208: Child process is running
-[Mon Jul 21 20:03:26 2014] [notice] Child 6208: Acquired the start mutex.
-[Mon Jul 21 20:03:26 2014] [notice] Child 6208: Starting 64 worker threads.
-[Mon Jul 21 20:03:26 2014] [notice] Child 6208: Starting thread to listen on port 80.
-[Mon Jul 21 20:04:36 2014] [error] (OS 10060)A connection attempt failed because the connected party did not properly respond after a period of time or established connection failed because connected host has failed to respond.  : proxy: HTTP: attempt to connect to 192.168.0.53:8081 (192.168.0.53) failed
-[Mon Jul 21 20:04:36 2014] [error] ap_proxy_connect_backend disabling worker for (192.168.0.53)
-[Mon Jul 21 20:05:05 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
-[Mon Jul 21 20:05:05 2014] [notice] Child 6208: Exit event signaled. Child process is ending.
-[Mon Jul 21 20:05:06 2014] [notice] Child 6208: Released the start mutex
-[Mon Jul 21 20:05:07 2014] [notice] Child 6208: All worker threads have exited.
-[Mon Jul 21 20:05:07 2014] [notice] Child 6208: Child process is exiting
-[Mon Jul 21 20:05:07 2014] [notice] Parent: Child process exited successfully.
-[Mon Jul 21 20:05:25 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Mon Jul 21 20:05:25 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Mon Jul 21 20:05:25 2014] [notice] Parent: Created child process 3944
-Apache server interrupted...
-otice] Child 3944: Child process is running
-[Mon Jul 21 20:05:25 2014] [notice] Child 3944: Acquired the start mutex.
-[Mon Jul 21 20:05:25 2014] [notice] Child 3944: Starting 64 worker threads.
-[Mon Jul 21 20:05:25 2014] [notice] Child 3944: Starting thread to listen on port 80.
-[Mon Jul 21 20:05:36 2014] [error] [client 127.0.0.1] File does not exist: C:/Apache22/htdocs/home, referer: http://localhost/sickbeard
-[Mon Jul 21 21:18:49 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
-[Mon Jul 21 21:18:49 2014] [notice] Child 3944: Exit event signaled. Child process is ending.
-[Mon Jul 21 21:18:50 2014] [notice] Child 3944: Released the start mutex
-[Mon Jul 21 21:18:51 2014] [notice] Child 3944: All worker threads have exited.
-[Mon Jul 21 21:18:51 2014] [notice] Child 3944: Child process is exiting
-[Mon Jul 21 21:18:51 2014] [notice] Parent: Child process exited successfully.
-[Mon Jul 21 21:51:13 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Mon Jul 21 21:51:13 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Mon Jul 21 21:51:13 2014] [notice] Parent: Created child process 3788
-Apache server interrupted...
-otice] Child 3788: Child process is running
-[Mon Jul 21 21:51:13 2014] [notice] Child 3788: Acquired the start mutex.
-[Mon Jul 21 21:51:13 2014] [notice] Child 3788: Starting 64 worker threads.
-[Mon Jul 21 21:51:13 2014] [notice] Child 3788: Starting thread to listen on port 80.
-[Mon Jul 21 21:57:23 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
-[Mon Jul 21 21:57:23 2014] [notice] Child 3788: Exit event signaled. Child process is ending.
-[Mon Jul 21 21:57:24 2014] [notice] Child 3788: Released the start mutex
-[Mon Jul 21 21:57:25 2014] [notice] Child 3788: All worker threads have exited.
-[Mon Jul 21 21:57:25 2014] [notice] Child 3788: Child process is exiting
-[Mon Jul 21 21:57:25 2014] [notice] Parent: Child process exited successfully.
-[Mon Jul 21 21:57:26 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Mon Jul 21 21:57:26 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Mon Jul 21 21:57:26 2014] [notice] Parent: Created child process 2204
-Apache server interrupted...
-otice] Child 2204: Child process is running
-[Mon Jul 21 21:57:27 2014] [notice] Child 2204: Acquired the start mutex.
-[Mon Jul 21 21:57:27 2014] [notice] Child 2204: Starting 64 worker threads.
-[Mon Jul 21 21:57:27 2014] [notice] Child 2204: Starting thread to listen on port 80.
-[Mon Jul 21 21:58:08 2014] [error] [client 127.0.0.1] (OS 2)The system cannot find the file specified.  : couldn't create child process: 720002: writeSettings.py, referer: http://localhost/
-[Mon Jul 21 21:58:08 2014] [error] [client 127.0.0.1] (OS 2)The system cannot find the file specified.  : couldn't spawn child process: V:/HTPC/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/
-[Mon Jul 21 22:05:55 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
-[Mon Jul 21 22:05:55 2014] [notice] Child 2204: Exit event signaled. Child process is ending.
-[Mon Jul 21 22:05:56 2014] [notice] Child 2204: Released the start mutex
-[Mon Jul 21 22:05:57 2014] [notice] Child 2204: All worker threads have exited.
-[Mon Jul 21 22:05:57 2014] [notice] Child 2204: Child process is exiting
-[Mon Jul 21 22:05:57 2014] [notice] Parent: Child process exited successfully.
-[Mon Jul 21 22:06:00 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Mon Jul 21 22:06:00 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Mon Jul 21 22:06:00 2014] [notice] Parent: Created child process 6660
-Apache server interrupted...
-otice] Child 6660: Child process is running
-[Mon Jul 21 22:06:00 2014] [notice] Child 6660: Acquired the start mutex.
-[Mon Jul 21 22:06:00 2014] [notice] Child 6660: Starting 64 worker threads.
-[Mon Jul 21 22:06:00 2014] [notice] Child 6660: Starting thread to listen on port 80.
-[Mon Jul 21 22:06:46 2014] [error] [client 127.0.0.1] File does not exist: V:/HTPC/HTPConnect/htdocs/home, referer: http://localhost/sickbeard
-[Mon Jul 21 22:09:13 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
-[Mon Jul 21 22:09:13 2014] [notice] Child 6660: Exit event signaled. Child process is ending.
-[Mon Jul 21 22:09:14 2014] [notice] Child 6660: Released the start mutex
-[Mon Jul 21 22:09:15 2014] [notice] Child 6660: All worker threads have exited.
-[Mon Jul 21 22:09:15 2014] [notice] Child 6660: Child process is exiting
-[Mon Jul 21 22:09:15 2014] [notice] Parent: Child process exited successfully.
-[Mon Jul 21 22:13:07 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Mon Jul 21 22:13:07 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Mon Jul 21 22:13:07 2014] [notice] Parent: Created child process 4168
-Apache server interrupted...
-otice] Child 4168: Child process is running
-[Mon Jul 21 22:13:07 2014] [notice] Child 4168: Acquired the start mutex.
-[Mon Jul 21 22:13:07 2014] [notice] Child 4168: Starting 64 worker threads.
-[Mon Jul 21 22:13:07 2014] [notice] Child 4168: Starting thread to listen on port 80.
-[Mon Jul 21 22:13:35 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
-[Mon Jul 21 22:13:35 2014] [notice] Child 4168: Exit event signaled. Child process is ending.
-[Mon Jul 21 22:13:36 2014] [notice] Child 4168: Released the start mutex
-[Mon Jul 21 22:13:41 2014] [notice] Child 4168: All worker threads have exited.
-[Mon Jul 21 22:13:41 2014] [notice] Child 4168: Child process is exiting
-[Mon Jul 21 22:13:41 2014] [notice] Parent: Child process exited successfully.
-[Mon Jul 21 22:14:42 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
-[Mon Jul 21 22:14:42 2014] [notice] Server built: Jul 10 2013 01:52:12
-[Mon Jul 21 22:14:42 2014] [notice] Parent: Created child process 5332
-Apache server interrupted...
-otice] Child 5332: Child process is running
-[Mon Jul 21 22:14:42 2014] [notice] Child 5332: Acquired the start mutex.
-[Mon Jul 21 22:14:42 2014] [notice] Child 5332: Starting 64 worker threads.
-[Mon Jul 21 22:14:42 2014] [notice] Child 5332: Starting thread to listen on port 80.
-[Mon Jul 21 22:14:45 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
-[Mon Jul 21 22:14:45 2014] [notice] Child 5332: Exit event signaled. Child process is ending.
-[Mon Jul 21 22:14:46 2014] [notice] Child 5332: Released the start mutex
-[Mon Jul 21 22:14:47 2014] [notice] Child 5332: All worker threads have exited.
-[Mon Jul 21 22:14:47 2014] [notice] Child 5332: Child process is exiting
-[Mon Jul 21 22:14:47 2014] [notice] Parent: Child process exited successfully.
+[Mon Jul 21 22:29:55.767033 2014] [mime:error] [pid 7687] (2)No such file or directory: AH01597: could not open mime types config file /usr/conf/mime.types.
+AH00016: Configuration Failed
+[Mon Jul 21 22:30:35.093989 2014] [core:warn] [pid 7729] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 21 22:30:35.094970 2014] [mpm_prefork:notice] [pid 7729] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Mon Jul 21 22:30:35.095008 2014] [core:notice] [pid 7729] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Mon Jul 21 22:30:35.095409 2014] [unixd:alert] [pid 7730] (22)Invalid argument: AH02155: getpwuid: couldn't determine user name from uid -1, you probably need to modify the User directive
+[Mon Jul 21 22:30:35.095572 2014] [unixd:alert] [pid 7731] (22)Invalid argument: AH02155: getpwuid: couldn't determine user name from uid -1, you probably need to modify the User directive
+[Mon Jul 21 22:30:35.095779 2014] [unixd:alert] [pid 7732] (22)Invalid argument: AH02155: getpwuid: couldn't determine user name from uid -1, you probably need to modify the User directive
+[Mon Jul 21 22:30:35.095938 2014] [unixd:alert] [pid 7733] (22)Invalid argument: AH02155: getpwuid: couldn't determine user name from uid -1, you probably need to modify the User directive
+[Mon Jul 21 22:30:35.095992 2014] [unixd:alert] [pid 7734] (22)Invalid argument: AH02155: getpwuid: couldn't determine user name from uid -1, you probably need to modify the User directive
+[Mon Jul 21 22:32:20.849332 2014] [core:crit] [pid 7773] AH00136: Server MUST relinquish startup privileges before accepting connections.  Please ensure mod_unixd or other system security module is loaded.
+AH00016: Configuration Failed
+[Mon Jul 21 22:33:03.768051 2014] [core:warn] [pid 7828] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 21 22:33:03.769198 2014] [mpm_prefork:notice] [pid 7828] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Mon Jul 21 22:33:03.769241 2014] [core:notice] [pid 7828] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Mon Jul 21 22:33:19.338665 2014] [core:crit] [pid 7829] (13)Permission denied: [client ::1:53010] AH00529: /Users/davidpearce/Dropbox/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/Users/davidpearce/Dropbox/' is executable
+[Mon Jul 21 22:33:39.749487 2014] [core:warn] [pid 7897] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 21 22:33:39.750617 2014] [mpm_prefork:notice] [pid 7897] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Mon Jul 21 22:33:39.750661 2014] [core:notice] [pid 7897] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Mon Jul 21 22:34:03.929614 2014] [core:warn] [pid 7954] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 21 22:34:03.930612 2014] [mpm_prefork:notice] [pid 7954] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Mon Jul 21 22:34:03.930650 2014] [core:notice] [pid 7954] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Mon Jul 21 22:34:21.594562 2014] [cgi:error] [pid 7955] [client ::1:53022] Options ExecCGI is off in this directory: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/
+[Mon Jul 21 22:34:41.553940 2014] [cgi:error] [pid 7956] [client ::1:53023] Options ExecCGI is off in this directory: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/
+[Mon Jul 21 22:35:04.004657 2014] [core:warn] [pid 8007] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 21 22:35:04.005612 2014] [mpm_prefork:notice] [pid 8007] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Mon Jul 21 22:35:04.005660 2014] [core:notice] [pid 8007] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Mon Jul 21 22:35:06.822390 2014] [cgi:error] [pid 8008] [client ::1:53026] Options ExecCGI is off in this directory: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/
+[Mon Jul 21 22:35:52.828687 2014] [cgi:error] [pid 8009] [client ::1:53036] Options ExecCGI is off in this directory: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/
+[Mon Jul 21 22:36:19.091263 2014] [core:warn] [pid 8057] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 21 22:36:19.092245 2014] [mpm_prefork:notice] [pid 8057] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Mon Jul 21 22:36:19.092282 2014] [core:notice] [pid 8057] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Mon Jul 21 22:36:21.641456 2014] [cgi:error] [pid 8058] [client ::1:53038] Options ExecCGI is off in this directory: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/
+[Mon Jul 21 22:37:03.225178 2014] [cgi:error] [pid 8061] [client ::1:53045] Options ExecCGI is off in this directory: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/
+[Mon Jul 21 22:37:53.604992 2014] [core:warn] [pid 8099] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 21 22:37:53.605995 2014] [mpm_prefork:notice] [pid 8099] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Mon Jul 21 22:37:53.606037 2014] [core:notice] [pid 8099] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Mon Jul 21 22:37:57.875736 2014] [cgi:error] [pid 8100] [client ::1:53079] Options ExecCGI is off in this directory: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/
+[Mon Jul 21 22:39:57.630514 2014] [core:warn] [pid 8167] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 21 22:39:57.631699 2014] [mpm_prefork:notice] [pid 8167] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Mon Jul 21 22:39:57.631739 2014] [core:notice] [pid 8167] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Mon Jul 21 22:40:05.756636 2014] [cgi:error] [pid 8168] [client ::1:53087] Options ExecCGI is off in this directory: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/
+[Mon Jul 21 22:40:36.409418 2014] [core:warn] [pid 8203] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 21 22:40:36.410675 2014] [mpm_prefork:notice] [pid 8203] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Mon Jul 21 22:40:36.410724 2014] [core:notice] [pid 8203] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Mon Jul 21 22:40:40.059211 2014] [cgi:error] [pid 8204] [client ::1:53092] Options ExecCGI is off in this directory: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/
+[Mon Jul 21 22:42:01.967077 2014] [core:warn] [pid 8252] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 21 22:42:01.968454 2014] [mpm_prefork:notice] [pid 8252] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Mon Jul 21 22:42:01.968502 2014] [core:notice] [pid 8252] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'

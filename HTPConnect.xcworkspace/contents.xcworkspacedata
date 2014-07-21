@@ -2,18 +2,27 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:getSettings.py">
+      location = "group:bin">
+   </FileRef>
+   <FileRef
+      location = "group:conf">
+   </FileRef>
+   <FileRef
+      location = "group:error">
+   </FileRef>
+   <FileRef
+      location = "group:htdocs">
+   </FileRef>
+   <FileRef
+      location = "group:httpd.sh">
+   </FileRef>
+   <FileRef
+      location = "group:logs">
+   </FileRef>
+   <FileRef
+      location = "group:modules">
    </FileRef>
    <FileRef
       location = "group:README.md">
-   </FileRef>
-   <FileRef
-      location = "group:httpd.conf">
-   </FileRef>
-   <FileRef
-      location = "group:httpd.conf orig">
-   </FileRef>
-   <FileRef
-      location = "group:html">
    </FileRef>
 </Workspace>
