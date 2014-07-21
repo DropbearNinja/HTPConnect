@@ -11,3 +11,5 @@
 ehthumbs.db
 Thumbs.db
 *.log
+access_log
+error_log
