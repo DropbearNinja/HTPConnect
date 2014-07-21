@@ -129,9 +129,59 @@ otice] Child 3788: Child process is running
 [Mon Jul 21 21:57:26 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
 [Mon Jul 21 21:57:26 2014] [notice] Server built: Jul 10 2013 01:52:12
 [Mon Jul 21 21:57:26 2014] [notice] Parent: Created child process 2204
-[Mon Jul 21 21:57:27 2014] [notice] Child 2204: Child process is running
+Apache server interrupted...
+otice] Child 2204: Child process is running
 [Mon Jul 21 21:57:27 2014] [notice] Child 2204: Acquired the start mutex.
 [Mon Jul 21 21:57:27 2014] [notice] Child 2204: Starting 64 worker threads.
 [Mon Jul 21 21:57:27 2014] [notice] Child 2204: Starting thread to listen on port 80.
 [Mon Jul 21 21:58:08 2014] [error] [client 127.0.0.1] (OS 2)The system cannot find the file specified.  : couldn't create child process: 720002: writeSettings.py, referer: http://localhost/
 [Mon Jul 21 21:58:08 2014] [error] [client 127.0.0.1] (OS 2)The system cannot find the file specified.  : couldn't spawn child process: V:/HTPC/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/
+[Mon Jul 21 22:05:55 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Mon Jul 21 22:05:55 2014] [notice] Child 2204: Exit event signaled. Child process is ending.
+[Mon Jul 21 22:05:56 2014] [notice] Child 2204: Released the start mutex
+[Mon Jul 21 22:05:57 2014] [notice] Child 2204: All worker threads have exited.
+[Mon Jul 21 22:05:57 2014] [notice] Child 2204: Child process is exiting
+[Mon Jul 21 22:05:57 2014] [notice] Parent: Child process exited successfully.
+[Mon Jul 21 22:06:00 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
+[Mon Jul 21 22:06:00 2014] [notice] Server built: Jul 10 2013 01:52:12
+[Mon Jul 21 22:06:00 2014] [notice] Parent: Created child process 6660
+Apache server interrupted...
+otice] Child 6660: Child process is running
+[Mon Jul 21 22:06:00 2014] [notice] Child 6660: Acquired the start mutex.
+[Mon Jul 21 22:06:00 2014] [notice] Child 6660: Starting 64 worker threads.
+[Mon Jul 21 22:06:00 2014] [notice] Child 6660: Starting thread to listen on port 80.
+[Mon Jul 21 22:06:46 2014] [error] [client 127.0.0.1] File does not exist: V:/HTPC/HTPConnect/htdocs/home, referer: http://localhost/sickbeard
+[Mon Jul 21 22:09:13 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Mon Jul 21 22:09:13 2014] [notice] Child 6660: Exit event signaled. Child process is ending.
+[Mon Jul 21 22:09:14 2014] [notice] Child 6660: Released the start mutex
+[Mon Jul 21 22:09:15 2014] [notice] Child 6660: All worker threads have exited.
+[Mon Jul 21 22:09:15 2014] [notice] Child 6660: Child process is exiting
+[Mon Jul 21 22:09:15 2014] [notice] Parent: Child process exited successfully.
+[Mon Jul 21 22:13:07 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
+[Mon Jul 21 22:13:07 2014] [notice] Server built: Jul 10 2013 01:52:12
+[Mon Jul 21 22:13:07 2014] [notice] Parent: Created child process 4168
+Apache server interrupted...
+otice] Child 4168: Child process is running
+[Mon Jul 21 22:13:07 2014] [notice] Child 4168: Acquired the start mutex.
+[Mon Jul 21 22:13:07 2014] [notice] Child 4168: Starting 64 worker threads.
+[Mon Jul 21 22:13:07 2014] [notice] Child 4168: Starting thread to listen on port 80.
+[Mon Jul 21 22:13:35 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Mon Jul 21 22:13:35 2014] [notice] Child 4168: Exit event signaled. Child process is ending.
+[Mon Jul 21 22:13:36 2014] [notice] Child 4168: Released the start mutex
+[Mon Jul 21 22:13:41 2014] [notice] Child 4168: All worker threads have exited.
+[Mon Jul 21 22:13:41 2014] [notice] Child 4168: Child process is exiting
+[Mon Jul 21 22:13:41 2014] [notice] Parent: Child process exited successfully.
+[Mon Jul 21 22:14:42 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
+[Mon Jul 21 22:14:42 2014] [notice] Server built: Jul 10 2013 01:52:12
+[Mon Jul 21 22:14:42 2014] [notice] Parent: Created child process 5332
+Apache server interrupted...
+otice] Child 5332: Child process is running
+[Mon Jul 21 22:14:42 2014] [notice] Child 5332: Acquired the start mutex.
+[Mon Jul 21 22:14:42 2014] [notice] Child 5332: Starting 64 worker threads.
+[Mon Jul 21 22:14:42 2014] [notice] Child 5332: Starting thread to listen on port 80.
+[Mon Jul 21 22:14:45 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Mon Jul 21 22:14:45 2014] [notice] Child 5332: Exit event signaled. Child process is ending.
+[Mon Jul 21 22:14:46 2014] [notice] Child 5332: Released the start mutex
+[Mon Jul 21 22:14:47 2014] [notice] Child 5332: All worker threads have exited.
+[Mon Jul 21 22:14:47 2014] [notice] Child 5332: Child process is exiting
+[Mon Jul 21 22:14:47 2014] [notice] Parent: Child process exited successfully.
