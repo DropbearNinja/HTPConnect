@@ -1,4 +1,5 @@
-#!/HTPC/Python27/python
+#!python
+
 
 import cgi
 import json
@@ -23,7 +24,7 @@ def main():
 
 
 def writeFile(dict):
-    filepath = os.getcwd() + "/../../conf/settings.ini"
+    filepath = os.getcwd() + "/settings.ini"
         #if os.path.isfile(filepath):
     with open(filepath, 'w') as inifile:
         json.dump(dict, inifile, ensure_ascii=True)

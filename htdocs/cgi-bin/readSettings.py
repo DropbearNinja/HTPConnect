@@ -1,4 +1,5 @@
-#!/HTPC/Python27/python
+#!python
+
 
 import cgi
 import json
@@ -20,7 +21,7 @@ def main():
     readFile()
 
 def readFile():
-    filepath = os.getcwd() + "/../../conf/settings.ini"
+    filepath = os.getcwd() + "/settings.ini"
     if os.path.isfile(filepath):
         with open(filepath, 'r') as inifile:
             json_data = json.load(inifile)
