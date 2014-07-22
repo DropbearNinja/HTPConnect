@@ -19,14 +19,16 @@ def main():
     arguments = cgi.FieldStorage()
     dict = cgiFieldStorageToDict(arguments)
     writeFile(dict)
+    print "<script type='text/javascript'>window.top.location.href = '/';</script>"
+
 
 def writeFile(dict):
-    filepath = os.getcwd() + "/../settings.ini"
-    if os.path.isfile(filepath):
-        with open(filepath, 'w') as inifile:
-            json.dump(dict, inifile)
-    else:
-        print "settings file not found <br>"
-        print filepath
+    filepath = os.getcwd() + "/../../conf/settings.ini"
+        #if os.path.isfile(filepath):
+    with open(filepath, 'w') as inifile:
+        json.dump(dict, inifile, ensure_ascii=True)
+    #else:
+    #    print "settings file not found <br>"
+#    print filepath
 
 main()

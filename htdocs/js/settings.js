@@ -1,4 +1,27 @@
-var GlobalSettings;
+window.GlobalSettings = {"settings": "1" };
+
+$.ajax({
+       type: 'GET',
+       url: '/cgi-bin/readSettings.py',
+       dataType: 'text',
+       success: function(jsonData) {
+            //alert(jsonData);
+            var obj = JSON.parse(jsonData);
+            //alert(obj['Key0']);
+           window.GlobalSettings = obj;
+       },
+       error: function() {
+            alert('Error loading settings.');
+       }
+       });
+ $(document).ajaxStop(function () {
+      //alert(GlobalSettings['MenuBgColour']);
+                      ChangeColours();
+                      
+                      //document.getElementById("MenuBgColour").value = window.GlobalSettings['MenuBgColour'];
+                      //document.getElementById("MenuTextColour").value = window.GlobalSettings['MenuTextColour'];
+                      
+                      });
 
 function AddRow() {
     // Find a <table> element with id="myTable":
@@ -40,14 +63,7 @@ function DeleteRow(rowID) {
 
 
 function ChangeColours() {
-    $(".navbar").css("background-color", getSettings('MenuBGColour'));
-    $(".navbar-default").css("background-color", getSettings('MenuBGColour'));;
-}
-
-function setElement(elementid, data) {
-    document.getElementById(elementid).value = data;
-}
-
-function getSettings(setID) {
-    return GlobalSettings[setID];
+    //alert(window.GlobalSettings["MenuBgColour"]);
+    $(".pushy").css("background", window.GlobalSettings['MenuBgColour']);
+    $(".pushy a").css("color", window.GlobalSettings['MenuTextColour']);
 }

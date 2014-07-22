@@ -1,14 +1,26 @@
 <html>
 <head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
 		<link href="../css/style.css" rel="stylesheet">
         <link href="../css/normalize.css" rel="stylesheet">
 		<link href="../fonts/open-iconic.css" rel="stylesheet">
         <script src="../js/vendor/modernizr.custom.71422.js"></script>
 		<script src="../js/settings.js"></script>
+        <script type="text/javascript">/**alert("set.html" + GlobalSettings);**/</script>
 </head>
 <body>
-
+    <script type="text/javascript">
+        $(document).ajaxStop(function () {
+                             //alert(GlobalSettings['MenuBgColour']);
+                             //ChangeColours();
+                             
+                             document.getElementById("MenuBgColour").value = window.GlobalSettings['MenuBgColour'];
+                             document.getElementById("MenuTextColour").value = window.GlobalSettings['MenuTextColour'];
+                             
+                             });
+        </script>
 			<!-- settings -->
+            <form action="/cgi-bin/writeSettings.py" method="POST">
 			<div id="settings">
 				<div style="font-size: 40px">SETTINGS</div><br>
 				<a id="exit"; href="/exit">Shutdown Server</a><a id="restart"; href="/restart">Restart Server</a>
@@ -16,8 +28,8 @@
 				<table id="settingstable" class="input-list glow clearfix">
 					<tr id="Row0">
 						<td style="width: 20%;text-align:right">Menu Items:</td>
-						<td style="width: 30%"><input type="text" value="Menu Item" id="Key0"></td>
-						<td style="width: 30%"><input type="text" value="Address" id="Value0"></td>
+						<td style="width: 30%"><input type="text" placeholder="Menu Item" name="Key0" id="Key0"></td>
+						<td style="width: 30%"><input type="text" placeholder="Address" name="Value0" id="Value0"></td>
 						<td></td>
 					</tr>
 					<tr>
@@ -30,29 +42,27 @@
 					<br>
 					<br>
 						<br><br>
-                    <form id="settings-colour">
 					<table id="colourtable" class="input-list glow clearfix">
 					<tr>
 						<td style="width: 20%;text-align:right">Colours:</td>
 						<td style="width: 30%">Menu background:</td>
-						<td style="width: 50%"><input type="text" id="txtMenuBgColour" class="color"></td>
+						<td style="width: 50%"><input type="text" id="MenuBgColour" name="MenuBgColour" class="color"></td>
 					<tr>
 						<td></td>
 						<td>Menu Text:</td>
-						<td><input type="text" id="txtMenuTextColour" class="color"></td>
+						<td><input type="text" id="MenuTextColour" name="MenuTextColour" class="color"></td>
 						<td></td>
 					</tr>
                     <tr>
                         <td></td>
                         <td></td>
-                        <td style="text-align:right"><button id="buttonColourMenu" onclick="saveColours()">Save</button></td>
+                        <td style="text-align:right"><button id="buttonColourMenu">Save</button></td>
                     </tr>
 				</table>
-                </form>
 				<br>
 				<a href="https://useiconic.com/open/" style="color:white;">Open Iconic</a>
 			</div>
-
+            </form>
 
 
 </body>

@@ -5,7 +5,8 @@ import json
 from urllib import urlencode
 import os, os.path
 
-print "Content-type: text/html\n\n"
+
+print 'Content-Type:application/json\n'
 
 def cgiFieldStorageToDict(fieldStorage):
     """ Get a plain dictionary rather than the '.value' system used by the
@@ -19,12 +20,16 @@ def main():
     readFile()
 
 def readFile():
-    filepath = os.getcwd() + "/../settings.ini"
+    filepath = os.getcwd() + "/../../conf/settings.ini"
     if os.path.isfile(filepath):
         with open(filepath, 'r') as inifile:
-            print json.load(inifile)
+            json_data = json.load(inifile)
+            
+            print json.dumps(json_data)
+            #print str_data
+
     else:
-        print "settings file not found <br>"
-        print filepath
+        print "{'Settings': 'Not Found'}"
+#print filepath
 
 main()

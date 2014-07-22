@@ -181,3 +181,222 @@ otice] Child 3676: Child process is running
 [Tue Jul 22 14:58:03.454972 2014] [core:notice] [pid 9447] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
 [Tue Jul 22 14:58:04.738385 2014] [core:crit] [pid 9448] (13)Permission denied: [client ::1:54027] AH00529: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/' is executable
 [Tue Jul 22 14:58:05.521320 2014] [core:crit] [pid 9448] (13)Permission denied: [client ::1:54027] AH00529: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/' is executable
+[Tue Jul 22 15:03:26.366067 2014] [proxy:error] [pid 9448] (70007)The timeout specified has expired: AH00957: HTTP: attempt to connect to 192.168.1.3:8081 (192.168.1.3) failed
+[Tue Jul 22 15:03:26.366590 2014] [proxy:error] [pid 9448] AH00959: ap_proxy_connect_backend disabling worker for (192.168.1.3) for 60s
+[Tue Jul 22 15:03:26.366606 2014] [proxy_http:error] [pid 9448] [client ::1:54101] AH01114: HTTP: failed to make connection to backend: 192.168.1.3, referer: http://localhost/
+[Tue Jul 22 15:10:42.423486 2014] [proxy:error] [pid 9492] (70007)The timeout specified has expired: AH00957: HTTP: attempt to connect to 192.168.1.3:8083 (192.168.1.3) failed
+[Tue Jul 22 15:10:42.423714 2014] [proxy:error] [pid 9492] AH00959: ap_proxy_connect_backend disabling worker for (192.168.1.3) for 60s
+[Tue Jul 22 15:10:42.423733 2014] [proxy_http:error] [pid 9492] [client ::1:54158] AH01114: HTTP: failed to make connection to backend: 192.168.1.3
+[Tue Jul 22 15:20:10.541820 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215: Traceback (most recent call last):
+[Tue Jul 22 15:20:10.541943 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 30, in <module>
+[Tue Jul 22 15:20:10.541953 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:     main()
+[Tue Jul 22 15:20:10.542028 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 19, in main
+[Tue Jul 22 15:20:10.542046 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:     readFile()
+[Tue Jul 22 15:20:10.542090 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 25, in readFile
+[Tue Jul 22 15:20:10.542117 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:     print json.load(inifile, object_hook=ascii_encode_dict)
+[Tue Jul 22 15:20:10.542143 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215: NameError: global name 'ascii_encode_dict' is not defined
+[Tue Jul 22 15:20:11.710040 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215: Traceback (most recent call last):
+[Tue Jul 22 15:20:11.710146 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 30, in <module>
+[Tue Jul 22 15:20:11.710159 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:     main()
+[Tue Jul 22 15:20:11.710203 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 19, in main
+[Tue Jul 22 15:20:11.710215 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:     readFile()
+[Tue Jul 22 15:20:11.710257 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 25, in readFile
+[Tue Jul 22 15:20:11.710297 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215:     print json.load(inifile, object_hook=ascii_encode_dict)
+[Tue Jul 22 15:20:11.710333 2014] [cgi:error] [pid 9493] [client ::1:54293] AH01215: NameError: global name 'ascii_encode_dict' is not defined
+[Tue Jul 22 15:23:27.721394 2014] [cgi:error] [pid 9488] [client ::1:54355] AH01215: Traceback (most recent call last):
+[Tue Jul 22 15:23:27.721650 2014] [cgi:error] [pid 9488] [client ::1:54355] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 7, in <module>
+[Tue Jul 22 15:23:27.721667 2014] [cgi:error] [pid 9488] [client ::1:54355] AH01215:     import yaml
+[Tue Jul 22 15:23:27.721686 2014] [cgi:error] [pid 9488] [client ::1:54355] AH01215: ImportError: No module named yaml
+[Tue Jul 22 15:23:27.725701 2014] [cgi:error] [pid 9488] [client ::1:54355] End of script output before headers: readSettings.py
+[Tue Jul 22 15:23:40.247513 2014] [cgi:error] [pid 9448] [client ::1:54356] AH01215: Traceback (most recent call last):
+[Tue Jul 22 15:23:40.247622 2014] [cgi:error] [pid 9448] [client ::1:54356] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 33, in <module>
+[Tue Jul 22 15:23:40.247630 2014] [cgi:error] [pid 9448] [client ::1:54356] AH01215:     main()
+[Tue Jul 22 15:23:40.247686 2014] [cgi:error] [pid 9448] [client ::1:54356] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 20, in main
+[Tue Jul 22 15:23:40.247709 2014] [cgi:error] [pid 9448] [client ::1:54356] AH01215:     readFile()
+[Tue Jul 22 15:23:40.247773 2014] [cgi:error] [pid 9448] [client ::1:54356] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 26, in readFile
+[Tue Jul 22 15:23:40.247817 2014] [cgi:error] [pid 9448] [client ::1:54356] AH01215:     json_data = json.load(inifile, object_hook=ascii_encode_dict)
+[Tue Jul 22 15:23:40.247866 2014] [cgi:error] [pid 9448] [client ::1:54356] AH01215: NameError: global name 'ascii_encode_dict' is not defined
+[Tue Jul 22 15:36:40.655199 2014] [cgi:error] [pid 9450] [client ::1:54832] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 27, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:36:40.655318 2014] [cgi:error] [pid 9450] [client ::1:54832] AH01215:     with open(filepath, 'w') as inifile:, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:36:40.655324 2014] [cgi:error] [pid 9450] [client ::1:54832] AH01215:     ^, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:36:40.655340 2014] [cgi:error] [pid 9450] [client ::1:54832] AH01215: IndentationError: unexpected indent, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:36:40.656470 2014] [cgi:error] [pid 9450] [client ::1:54832] End of script output before headers: writeSettings.py, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:37:24.435458 2014] [proxy:error] [pid 9452] (70007)The timeout specified has expired: AH00957: HTTP: attempt to connect to 192.168.1.3:8082 (192.168.1.3) failed
+[Tue Jul 22 15:37:24.435582 2014] [proxy:error] [pid 9452] AH00959: ap_proxy_connect_backend disabling worker for (192.168.1.3) for 60s
+[Tue Jul 22 15:37:24.435595 2014] [proxy_http:error] [pid 9452] [client ::1:54819] AH01114: HTTP: failed to make connection to backend: 192.168.1.3
+[Tue Jul 22 15:37:26.116523 2014] [proxy:error] [pid 9488] (70007)The timeout specified has expired: AH00957: HTTP: attempt to connect to 192.168.1.3:8082 (192.168.1.3) failed
+[Tue Jul 22 15:37:26.116717 2014] [proxy:error] [pid 9488] AH00959: ap_proxy_connect_backend disabling worker for (192.168.1.3) for 60s
+[Tue Jul 22 15:37:26.116724 2014] [proxy_http:error] [pid 9488] [client ::1:54822] AH01114: HTTP: failed to make connection to backend: 192.168.1.3
+[Tue Jul 22 15:37:28.663187 2014] [proxy:error] [pid 9454] (70007)The timeout specified has expired: AH00957: HTTP: attempt to connect to 192.168.1.3:8083 (192.168.1.3) failed
+[Tue Jul 22 15:37:28.663414 2014] [proxy:error] [pid 9454] AH00959: ap_proxy_connect_backend disabling worker for (192.168.1.3) for 60s
+[Tue Jul 22 15:37:28.663435 2014] [proxy_http:error] [pid 9454] [client ::1:54828] AH01114: HTTP: failed to make connection to backend: 192.168.1.3
+[Tue Jul 22 15:37:33.207588 2014] [cgi:error] [pid 9448] [client ::1:54837] AH01215: Traceback (most recent call last):, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:37:33.207735 2014] [cgi:error] [pid 9448] [client ::1:54837] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 33, in <module>, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:37:33.207744 2014] [cgi:error] [pid 9448] [client ::1:54837] AH01215:     main(), referer: http://localhost/content/settings.html
+[Tue Jul 22 15:37:33.207798 2014] [cgi:error] [pid 9448] [client ::1:54837] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 21, in main, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:37:33.207808 2014] [cgi:error] [pid 9448] [client ::1:54837] AH01215:     writeFile(dict), referer: http://localhost/content/settings.html
+[Tue Jul 22 15:37:33.207850 2014] [cgi:error] [pid 9448] [client ::1:54837] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 27, in writeFile, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:37:33.207868 2014] [cgi:error] [pid 9448] [client ::1:54837] AH01215:     with open(filepath, 'w') as inifile:, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:37:33.207918 2014] [cgi:error] [pid 9448] [client ::1:54837] AH01215: IOError: [Errno 2] No such file or directory: '/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin../../conf/settings.ini', referer: http://localhost/content/settings.html
+[Tue Jul 22 15:39:36.367221 2014] [cgi:error] [pid 9449] [client ::1:54845] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 32
+[Tue Jul 22 15:39:36.367363 2014] [cgi:error] [pid 9449] [client ::1:54845] AH01215:     print "{'Settings': 'Not Found'}
+[Tue Jul 22 15:39:36.367384 2014] [cgi:error] [pid 9449] [client ::1:54845] AH01215:                                    ^
+[Tue Jul 22 15:39:36.367414 2014] [cgi:error] [pid 9449] [client ::1:54845] AH01215: SyntaxError: EOL while scanning string literal
+[Tue Jul 22 15:39:36.368978 2014] [cgi:error] [pid 9449] [client ::1:54845] End of script output before headers: readSettings.py
+[Tue Jul 22 16:12:52.485744 2014] [cgi:error] [pid 9448] [client ::1:55594] script not found or unable to stat: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/test.py
+[Tue Jul 22 16:13:03.591560 2014] [cgi:error] [pid 9452] [client ::1:55599] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 31
+[Tue Jul 22 16:13:03.591858 2014] [cgi:error] [pid 9452] [client ::1:55599] AH01215:     else:
+[Tue Jul 22 16:13:03.591883 2014] [cgi:error] [pid 9452] [client ::1:55599] AH01215:        ^
+[Tue Jul 22 16:13:03.591908 2014] [cgi:error] [pid 9452] [client ::1:55599] AH01215: SyntaxError: invalid syntax
+[Tue Jul 22 16:13:03.595608 2014] [cgi:error] [pid 9452] [client ::1:55599] End of script output before headers: readSettings.py
+[Tue Jul 22 16:14:16.027319 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215: Traceback (most recent call last):
+[Tue Jul 22 16:14:16.027444 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 35, in <module>
+[Tue Jul 22 16:14:16.027454 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:     main()
+[Tue Jul 22 16:14:16.027511 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 20, in main
+[Tue Jul 22 16:14:16.027526 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:     readFile()
+[Tue Jul 22 16:14:16.027585 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 27, in readFile
+[Tue Jul 22 16:14:16.027610 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:     str_data = { [s.encode('utf-8') for s in json_data] }
+[Tue Jul 22 16:14:16.027632 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215: TypeError: unhashable type: 'list'
+[Tue Jul 22 16:14:16.999885 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215: Traceback (most recent call last):
+[Tue Jul 22 16:14:16.999990 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 35, in <module>
+[Tue Jul 22 16:14:17.000060 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:     main()
+[Tue Jul 22 16:14:17.000279 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 20, in main
+[Tue Jul 22 16:14:17.000298 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:     readFile()
+[Tue Jul 22 16:14:17.000366 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 27, in readFile
+[Tue Jul 22 16:14:17.000399 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215:     str_data = { [s.encode('utf-8') for s in json_data] }
+[Tue Jul 22 16:14:17.000422 2014] [cgi:error] [pid 9492] [client ::1:55624] AH01215: TypeError: unhashable type: 'list'
+[Tue Jul 22 16:14:23.088833 2014] [cgi:error] [pid 9493] [client ::1:55633] AH01215: Traceback (most recent call last):
+[Tue Jul 22 16:14:23.088935 2014] [cgi:error] [pid 9493] [client ::1:55633] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 35, in <module>
+[Tue Jul 22 16:14:23.088944 2014] [cgi:error] [pid 9493] [client ::1:55633] AH01215:     main()
+[Tue Jul 22 16:14:23.088985 2014] [cgi:error] [pid 9493] [client ::1:55633] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 20, in main
+[Tue Jul 22 16:14:23.088993 2014] [cgi:error] [pid 9493] [client ::1:55633] AH01215:     readFile()
+[Tue Jul 22 16:14:23.089034 2014] [cgi:error] [pid 9493] [client ::1:55633] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 29, in readFile
+[Tue Jul 22 16:14:23.089045 2014] [cgi:error] [pid 9493] [client ::1:55633] AH01215:     print str_data
+[Tue Jul 22 16:14:23.089065 2014] [cgi:error] [pid 9493] [client ::1:55633] AH01215: NameError: global name 'str_data' is not defined
+[Tue Jul 22 16:14:41.377764 2014] [cgi:error] [pid 9449] [client ::1:55637] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 28
+[Tue Jul 22 16:14:41.378132 2014] [cgi:error] [pid 9449] [client ::1:55637] AH01215:     echo json_data
+[Tue Jul 22 16:14:41.378179 2014] [cgi:error] [pid 9449] [client ::1:55637] AH01215:                  ^
+[Tue Jul 22 16:14:41.378197 2014] [cgi:error] [pid 9449] [client ::1:55637] AH01215: SyntaxError: invalid syntax
+[Tue Jul 22 16:14:41.381641 2014] [cgi:error] [pid 9449] [client ::1:55637] End of script output before headers: readSettings.py
+[Tue Jul 22 16:14:50.979799 2014] [cgi:error] [pid 9450] [client ::1:55638] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 28
+[Tue Jul 22 16:14:50.979917 2014] [cgi:error] [pid 9450] [client ::1:55638] AH01215:     rprint json_data
+[Tue Jul 22 16:14:50.979931 2014] [cgi:error] [pid 9450] [client ::1:55638] AH01215:                    ^
+[Tue Jul 22 16:14:50.979944 2014] [cgi:error] [pid 9450] [client ::1:55638] AH01215: SyntaxError: invalid syntax
+[Tue Jul 22 16:14:50.981328 2014] [cgi:error] [pid 9450] [client ::1:55638] End of script output before headers: readSettings.py
+[Tue Jul 22 16:14:53.470261 2014] [cgi:error] [pid 9488] [client ::1:55639] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 28
+[Tue Jul 22 16:14:53.470344 2014] [cgi:error] [pid 9488] [client ::1:55639] AH01215:     pprint json_data
+[Tue Jul 22 16:14:53.470363 2014] [cgi:error] [pid 9488] [client ::1:55639] AH01215:                    ^
+[Tue Jul 22 16:14:53.470376 2014] [cgi:error] [pid 9488] [client ::1:55639] AH01215: SyntaxError: invalid syntax
+[Tue Jul 22 16:14:53.471619 2014] [cgi:error] [pid 9488] [client ::1:55639] End of script output before headers: readSettings.py
+[Tue Jul 22 16:14:58.306650 2014] [cgi:error] [pid 9451] [client ::1:55640] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 28
+[Tue Jul 22 16:14:58.306899 2014] [cgi:error] [pid 9451] [client ::1:55640] AH01215:     print_r json_data
+[Tue Jul 22 16:14:58.306984 2014] [cgi:error] [pid 9451] [client ::1:55640] AH01215:                     ^
+[Tue Jul 22 16:14:58.307025 2014] [cgi:error] [pid 9451] [client ::1:55640] AH01215: SyntaxError: invalid syntax
+[Tue Jul 22 16:14:58.309701 2014] [cgi:error] [pid 9451] [client ::1:55640] End of script output before headers: readSettings.py
+[Tue Jul 22 16:15:01.147825 2014] [cgi:error] [pid 12557] [client ::1:55642] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 28
+[Tue Jul 22 16:15:01.147916 2014] [cgi:error] [pid 12557] [client ::1:55642] AH01215:     printr json_data
+[Tue Jul 22 16:15:01.147927 2014] [cgi:error] [pid 12557] [client ::1:55642] AH01215:                    ^
+[Tue Jul 22 16:15:01.147939 2014] [cgi:error] [pid 12557] [client ::1:55642] AH01215: SyntaxError: invalid syntax
+[Tue Jul 22 16:15:01.149132 2014] [cgi:error] [pid 12557] [client ::1:55642] End of script output before headers: readSettings.py
+[Tue Jul 22 16:16:51.945901 2014] [cgi:error] [pid 9449] [client fe80::1:55692] AH01215: Traceback (most recent call last):, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:16:51.946027 2014] [cgi:error] [pid 9449] [client fe80::1:55692] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 33, in <module>, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:16:51.946036 2014] [cgi:error] [pid 9449] [client fe80::1:55692] AH01215:     main(), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:16:51.946076 2014] [cgi:error] [pid 9449] [client fe80::1:55692] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 21, in main, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:16:51.946086 2014] [cgi:error] [pid 9449] [client fe80::1:55692] AH01215:     writeFile(dict), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:16:51.946129 2014] [cgi:error] [pid 9449] [client fe80::1:55692] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 28, in writeFile, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:16:51.946149 2014] [cgi:error] [pid 9449] [client fe80::1:55692] AH01215:     json.dumps(dict, inifile, ensure_ascii=true), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:16:51.946169 2014] [cgi:error] [pid 9449] [client fe80::1:55692] AH01215: NameError: global name 'true' is not defined, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:21:44.086897 2014] [cgi:error] [pid 9452] [client ::1:55781] AH01215: Traceback (most recent call last):, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:21:44.087043 2014] [cgi:error] [pid 9452] [client ::1:55781] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 33, in <module>, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:21:44.087051 2014] [cgi:error] [pid 9452] [client ::1:55781] AH01215:     main(), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:21:44.087091 2014] [cgi:error] [pid 9452] [client ::1:55781] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 21, in main, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:21:44.087102 2014] [cgi:error] [pid 9452] [client ::1:55781] AH01215:     writeFile(dict), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:21:44.087143 2014] [cgi:error] [pid 9452] [client ::1:55781] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 27, in writeFile, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:21:44.087165 2014] [cgi:error] [pid 9452] [client ::1:55781] AH01215:     with open(filepath, 'w', 'ascii') as inifile:, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:21:44.087180 2014] [cgi:error] [pid 9452] [client ::1:55781] AH01215: TypeError: an integer is required, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:23:13.799203 2014] [cgi:error] [pid 9448] [client ::1:55803] script not found or unable to stat: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/test.py
+[Tue Jul 22 16:26:16.865789 2014] [cgi:error] [pid 9452] [client ::1:55889] Premature end of script headers: readSettings.py, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:26:23.845598 2014] [cgi:error] [pid 9450] [client ::1:55893] Premature end of script headers: readSettings.py
+[Tue Jul 22 16:26:39.295343 2014] [cgi:error] [pid 12557] [client ::1:55896] Premature end of script headers: readSettings.py
+[Tue Jul 22 16:27:11.605206 2014] [cgi:error] [pid 9451] [client ::1:55901] AH01215: Traceback (most recent call last):, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:27:11.605337 2014] [cgi:error] [pid 9451] [client ::1:55901] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 33, in <module>, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:27:11.605345 2014] [cgi:error] [pid 9451] [client ::1:55901] AH01215:     main(), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:27:11.605386 2014] [cgi:error] [pid 9451] [client ::1:55901] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 21, in main, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:27:11.605402 2014] [cgi:error] [pid 9451] [client ::1:55901] AH01215:     writeFile(dict), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:27:11.605449 2014] [cgi:error] [pid 9451] [client ::1:55901] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 27, in writeFile, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:27:11.605471 2014] [cgi:error] [pid 9451] [client ::1:55901] AH01215:     with open(filepath, 'w', 'ascii') as inifile:, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:27:11.605486 2014] [cgi:error] [pid 9451] [client ::1:55901] AH01215: TypeError: an integer is required, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:30:37.827743 2014] [cgi:error] [pid 9452] [client ::1:55970] AH01215: Traceback (most recent call last):, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:30:37.827894 2014] [cgi:error] [pid 9452] [client ::1:55970] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 33, in <module>, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:30:37.827902 2014] [cgi:error] [pid 9452] [client ::1:55970] AH01215:     main(), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:30:37.827942 2014] [cgi:error] [pid 9452] [client ::1:55970] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 21, in main, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:30:37.827952 2014] [cgi:error] [pid 9452] [client ::1:55970] AH01215:     writeFile(dict), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:30:37.827995 2014] [cgi:error] [pid 9452] [client ::1:55970] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 27, in writeFile, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:30:37.828016 2014] [cgi:error] [pid 9452] [client ::1:55970] AH01215:     with open(filepath, 'w', 'ascii') as inifile:, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:30:37.828030 2014] [cgi:error] [pid 9452] [client ::1:55970] AH01215: TypeError: an integer is required, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:35:51.781961 2014] [cgi:error] [pid 9448] [client ::1:56160] AH01215: Traceback (most recent call last):
+[Tue Jul 22 16:35:51.782176 2014] [cgi:error] [pid 9448] [client ::1:56160] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 35, in <module>
+[Tue Jul 22 16:35:51.782186 2014] [cgi:error] [pid 9448] [client ::1:56160] AH01215:     main()
+[Tue Jul 22 16:35:51.782263 2014] [cgi:error] [pid 9448] [client ::1:56160] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 20, in main
+[Tue Jul 22 16:35:51.782276 2014] [cgi:error] [pid 9448] [client ::1:56160] AH01215:     readFile()
+[Tue Jul 22 16:35:51.782317 2014] [cgi:error] [pid 9448] [client ::1:56160] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 28, in readFile
+[Tue Jul 22 16:35:51.782334 2014] [cgi:error] [pid 9448] [client ::1:56160] AH01215:     print jsonify(json_data)
+[Tue Jul 22 16:35:51.782361 2014] [cgi:error] [pid 9448] [client ::1:56160] AH01215: NameError: global name 'jsonify' is not defined
+[Tue Jul 22 16:36:49.855196 2014] [cgi:error] [pid 12557] [client ::1:56181] AH01215: Traceback (most recent call last):
+[Tue Jul 22 16:36:49.855398 2014] [cgi:error] [pid 12557] [client ::1:56181] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 35, in <module>
+[Tue Jul 22 16:36:49.855410 2014] [cgi:error] [pid 12557] [client ::1:56181] AH01215:     main()
+[Tue Jul 22 16:36:49.855454 2014] [cgi:error] [pid 12557] [client ::1:56181] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 20, in main
+[Tue Jul 22 16:36:49.855465 2014] [cgi:error] [pid 12557] [client ::1:56181] AH01215:     readFile()
+[Tue Jul 22 16:36:49.855510 2014] [cgi:error] [pid 12557] [client ::1:56181] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 28, in readFile
+[Tue Jul 22 16:36:49.855530 2014] [cgi:error] [pid 12557] [client ::1:56181] AH01215:     print json.encode(json_data)
+[Tue Jul 22 16:36:49.855556 2014] [cgi:error] [pid 12557] [client ::1:56181] AH01215: AttributeError: 'module' object has no attribute 'encode'
+[Tue Jul 22 16:44:34.539494 2014] [cgi:error] [pid 12557] [client ::1:56321] AH01215: Traceback (most recent call last):, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:34.539606 2014] [cgi:error] [pid 12557] [client ::1:56321] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 33, in <module>, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:34.539614 2014] [cgi:error] [pid 12557] [client ::1:56321] AH01215:     main(), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:34.539653 2014] [cgi:error] [pid 12557] [client ::1:56321] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 21, in main, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:34.539663 2014] [cgi:error] [pid 12557] [client ::1:56321] AH01215:     writeFile(dict), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:34.539704 2014] [cgi:error] [pid 12557] [client ::1:56321] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 27, in writeFile, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:34.539725 2014] [cgi:error] [pid 12557] [client ::1:56321] AH01215:     with open(filepath, 'w', 'ascii') as inifile:, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:34.539740 2014] [cgi:error] [pid 12557] [client ::1:56321] AH01215: TypeError: an integer is required, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:45.519892 2014] [cgi:error] [pid 9452] [client ::1:56323] AH01215: Traceback (most recent call last):, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:45.520018 2014] [cgi:error] [pid 9452] [client ::1:56323] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 33, in <module>, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:45.520027 2014] [cgi:error] [pid 9452] [client ::1:56323] AH01215:     main(), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:45.520067 2014] [cgi:error] [pid 9452] [client ::1:56323] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 21, in main, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:45.520089 2014] [cgi:error] [pid 9452] [client ::1:56323] AH01215:     writeFile(dict), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:45.520132 2014] [cgi:error] [pid 9452] [client ::1:56323] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 27, in writeFile, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:45.520154 2014] [cgi:error] [pid 9452] [client ::1:56323] AH01215:     with open(filepath, 'w', 'ascii') as inifile:, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:45.520169 2014] [cgi:error] [pid 9452] [client ::1:56323] AH01215: TypeError: an integer is required, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:54.005413 2014] [cgi:error] [pid 9454] [client ::1:56324] AH01215: Traceback (most recent call last):, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:54.005524 2014] [cgi:error] [pid 9454] [client ::1:56324] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 33, in <module>, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:54.005533 2014] [cgi:error] [pid 9454] [client ::1:56324] AH01215:     main(), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:54.005573 2014] [cgi:error] [pid 9454] [client ::1:56324] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 21, in main, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:54.005583 2014] [cgi:error] [pid 9454] [client ::1:56324] AH01215:     writeFile(dict), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:54.005625 2014] [cgi:error] [pid 9454] [client ::1:56324] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 27, in writeFile, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:54.005646 2014] [cgi:error] [pid 9454] [client ::1:56324] AH01215:     with open(filepath, 'w', 'ascii') as inifile:, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:44:54.005660 2014] [cgi:error] [pid 9454] [client ::1:56324] AH01215: TypeError: an integer is required, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.061906 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215: Traceback (most recent call last):, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.061987 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 35, in <module>, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.061998 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:     main(), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062060 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 20, in main, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062073 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:     readFile(), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062152 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 26, in readFile, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062172 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:     json_data = json.load(inifile), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062242 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 290, in load, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062267 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:     **kw), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062339 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062372 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:     return _default_decoder.decode(s), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062442 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 365, in decode, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062476 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:     obj, end = self.raw_decode(s, idx=_w(s, 0).end()), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062551 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 383, in raw_decode, referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062596 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215:     raise ValueError("No JSON object could be decoded"), referer: http://localhost/content/settings.html
+[Tue Jul 22 16:46:57.062629 2014] [cgi:error] [pid 9454] [client ::1:56346] AH01215: ValueError: No JSON object could be decoded, referer: http://localhost/content/settings.html
+[Tue Jul 22 17:23:30.048235 2014] [cgi:error] [pid 9451] [client ::1:57505] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 22, referer: http://localhost/content/settings.html
+[Tue Jul 22 17:23:30.048350 2014] [cgi:error] [pid 9451] [client ::1:57505] AH01215:     print "<script type='text/javascript'>window.location.href = "http://stackoverflow.com";</script>", referer: http://localhost/content/settings.html
+[Tue Jul 22 17:23:30.048388 2014] [cgi:error] [pid 9451] [client ::1:57505] AH01215:                                                                      ^, referer: http://localhost/content/settings.html
+[Tue Jul 22 17:23:30.048406 2014] [cgi:error] [pid 9451] [client ::1:57505] AH01215: SyntaxError: invalid syntax, referer: http://localhost/content/settings.html
+[Tue Jul 22 17:23:30.049476 2014] [cgi:error] [pid 9451] [client ::1:57505] End of script output before headers: writeSettings.py, referer: http://localhost/content/settings.html
+[Tue Jul 22 17:23:48.036503 2014] [cgi:error] [pid 12557] [client ::1:57510] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettings.py", line 22, referer: http://localhost/content/settings.html
+[Tue Jul 22 17:23:48.036607 2014] [cgi:error] [pid 12557] [client ::1:57510] AH01215:     print "<script type='text/javascript'>window.location.href = "http://stackoverflow.com";</script>", referer: http://localhost/content/settings.html
+[Tue Jul 22 17:23:48.036636 2014] [cgi:error] [pid 12557] [client ::1:57510] AH01215:                                                                      ^, referer: http://localhost/content/settings.html
+[Tue Jul 22 17:23:48.036650 2014] [cgi:error] [pid 12557] [client ::1:57510] AH01215: SyntaxError: invalid syntax, referer: http://localhost/content/settings.html
+[Tue Jul 22 17:23:48.037798 2014] [cgi:error] [pid 12557] [client ::1:57510] End of script output before headers: writeSettings.py, referer: http://localhost/content/settings.html
