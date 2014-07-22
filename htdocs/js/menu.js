@@ -23,7 +23,7 @@ function LoadXBMC() {
 }
 
 function LoadSettings() {
-    $("#myiframe").attr("src", "");
+    $("#myiframe").attr("src", "/settings/settings.html");
     $("#landing").css( "visibility", "hidden" );
     $("#settings").css( "visibility", "visible" );
 }

@@ -79,8 +79,33 @@ otice] Child 7600: Child process is running
 [Tue Jul 22 11:39:30 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
 [Tue Jul 22 11:39:30 2014] [notice] Server built: Jul 10 2013 01:52:12
 [Tue Jul 22 11:39:30 2014] [notice] Parent: Created child process 2508
-[Tue Jul 22 11:39:30 2014] [notice] Child 2508: Child process is running
+Apache server interrupted...
+otice] Child 2508: Child process is running
 [Tue Jul 22 11:39:30 2014] [notice] Child 2508: Acquired the start mutex.
 [Tue Jul 22 11:39:30 2014] [notice] Child 2508: Starting 64 worker threads.
 [Tue Jul 22 11:39:30 2014] [notice] Child 2508: Starting thread to listen on port 80.
 [Tue Jul 22 11:39:32 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/favicon.ico
+[Tue Jul 22 11:46:13 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jul 22 11:46:13 2014] [notice] Child 2508: Exit event signaled. Child process is ending.
+[Tue Jul 22 11:46:14 2014] [notice] Child 2508: Released the start mutex
+[Tue Jul 22 11:46:15 2014] [notice] Child 2508: All worker threads have exited.
+[Tue Jul 22 11:46:15 2014] [notice] Child 2508: Child process is exiting
+[Tue Jul 22 11:46:15 2014] [notice] Parent: Child process exited successfully.
+[Tue Jul 22 12:17:57 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
+[Tue Jul 22 12:17:57 2014] [notice] Server built: Jul 10 2013 01:52:12
+[Tue Jul 22 12:17:57 2014] [notice] Parent: Created child process 1968
+Apache server interrupted...
+otice] Child 1968: Child process is running
+[Tue Jul 22 12:17:57 2014] [notice] Child 1968: Acquired the start mutex.
+[Tue Jul 22 12:17:57 2014] [notice] Child 1968: Starting 64 worker threads.
+[Tue Jul 22 12:17:57 2014] [notice] Child 1968: Starting thread to listen on port 80.
+[Tue Jul 22 12:18:01 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/favicon.ico
+[Tue Jul 22 12:19:34 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/favicon.ico
+[Tue Jul 22 12:20:31 2014] [error] (OS 10061)No connection could be made because the target machine actively refused it.  : proxy: HTTP: attempt to connect to 192.168.1.3:8082 (192.168.1.3) failed
+[Tue Jul 22 12:20:31 2014] [error] ap_proxy_connect_backend disabling worker for (192.168.1.3)
+[Tue Jul 22 12:23:48 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jul 22 12:23:48 2014] [notice] Child 1968: Exit event signaled. Child process is ending.
+[Tue Jul 22 12:23:49 2014] [notice] Child 1968: Released the start mutex
+[Tue Jul 22 12:23:50 2014] [notice] Child 1968: All worker threads have exited.
+[Tue Jul 22 12:23:50 2014] [notice] Child 1968: Child process is exiting
+[Tue Jul 22 12:23:51 2014] [notice] Parent: Child process exited successfully.

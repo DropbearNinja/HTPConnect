@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTPConnect</title>
+
+		<link href="/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/normalize.css">
+		
+		<!--Menu-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+        <script src="/js/vendor/modernizr.custom.71422.js"></script>
+		<script src="/js/pushy.js"></script>
+        <script src="/js/menu.js"></script>
+        <script src="/js/settings.js"></script>
+		<script src="/js/jscolor.js"></script>
+		
+<script>
+
+$( document ).ready(function() {
+                    loadColours();
+                    });
+
+</script>
+		
+</head>
+
+
+<body>
+		
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-close">
+		
+			<table id="menu">
+				<tr>
+					<td><a href="#" onclick="LoadSB()">SickBeard</a></td>
+					<td><a href="#" onclick="LoadSAB()">sabnzbd</a></td>
+					<td><a href="#" onclick="LoadCP()">Couchpotato</a></td>
+					<td><a href="# onclick="LoadXBMC()">XBMC</a></td>
+				</tr>
+			</table>
+			<table id="settingsmenu">
+				<tr>
+					<td><a href="#" onclick="LoadSettings()"><img src="/images/settings.gif" height="18" width="18"></a></td>
+				</tr>
+			</table>
+		
+        </nav>
+
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+
+        
+        <div id="container">	
+		<!-- Your Content -->	
+		
+			<!-- Menu Button  -->
+		    <div class="menu-btn"><img src="/images/menu.gif" height="18" width="18"></div>
+
+			<!-- Frame -->
+			<iframe id="myiframe" src="" border="0"><div id="divpage"></div></iframe> 
+			
+			
+
+			<!-- landing -->
+			<div id="landing">
+				<div id="heading">WELCOME</div><br>
+				<div id="subtitle">HTPConnect</div>
+			</div>
+			
+
+		</div>
+        
+</body>
+</html>
