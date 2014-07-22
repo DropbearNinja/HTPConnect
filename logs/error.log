@@ -462,3 +462,37 @@ otice] Child 5768: Child process is running
 [Tue Jul 22 17:40:46.780331 2014] [core:warn] [pid 16851] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
 [Tue Jul 22 17:40:46.781472 2014] [mpm_prefork:notice] [pid 16851] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
 [Tue Jul 22 17:40:46.781532 2014] [core:notice] [pid 16851] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Tue Jul 22 18:10:31.965128 2014] [cgi:error] [pid 16852] [client ::1:58242] script not found or unable to stat: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/writeSettingsdefault.py
+[Tue Jul 22 18:12:37.758158 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215: Traceback (most recent call last):, referer: http://localhost/
+[Tue Jul 22 18:12:37.758282 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 35, in <module>, referer: http://localhost/
+[Tue Jul 22 18:12:37.758290 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     main(), referer: http://localhost/
+[Tue Jul 22 18:12:37.758339 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 20, in main, referer: http://localhost/
+[Tue Jul 22 18:12:37.758347 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     readFile(), referer: http://localhost/
+[Tue Jul 22 18:12:37.758388 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 26, in readFile, referer: http://localhost/
+[Tue Jul 22 18:12:37.758404 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     json_data = json.load(inifile), referer: http://localhost/
+[Tue Jul 22 18:12:37.758448 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 290, in load, referer: http://localhost/
+[Tue Jul 22 18:12:37.758455 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     **kw), referer: http://localhost/
+[Tue Jul 22 18:12:37.758499 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads, referer: http://localhost/
+[Tue Jul 22 18:12:37.758516 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     return _default_decoder.decode(s), referer: http://localhost/
+[Tue Jul 22 18:12:37.758561 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 365, in decode, referer: http://localhost/
+[Tue Jul 22 18:12:37.758583 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     obj, end = self.raw_decode(s, idx=_w(s, 0).end()), referer: http://localhost/
+[Tue Jul 22 18:12:37.758630 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 383, in raw_decode, referer: http://localhost/
+[Tue Jul 22 18:12:37.758653 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     raise ValueError("No JSON object could be decoded"), referer: http://localhost/
+[Tue Jul 22 18:12:37.758671 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215: ValueError: No JSON object could be decoded, referer: http://localhost/
+[Tue Jul 22 18:12:42.471609 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215: Traceback (most recent call last):, referer: http://localhost/
+[Tue Jul 22 18:12:42.471717 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 35, in <module>, referer: http://localhost/
+[Tue Jul 22 18:12:42.471724 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     main(), referer: http://localhost/
+[Tue Jul 22 18:12:42.471769 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 20, in main, referer: http://localhost/
+[Tue Jul 22 18:12:42.471778 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     readFile(), referer: http://localhost/
+[Tue Jul 22 18:12:42.471837 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin/readSettings.py", line 26, in readFile, referer: http://localhost/
+[Tue Jul 22 18:12:42.471853 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     json_data = json.load(inifile), referer: http://localhost/
+[Tue Jul 22 18:12:42.471898 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 290, in load, referer: http://localhost/
+[Tue Jul 22 18:12:42.471905 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     **kw), referer: http://localhost/
+[Tue Jul 22 18:12:42.471949 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads, referer: http://localhost/
+[Tue Jul 22 18:12:42.471966 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     return _default_decoder.decode(s), referer: http://localhost/
+[Tue Jul 22 18:12:42.472011 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 365, in decode, referer: http://localhost/
+[Tue Jul 22 18:12:42.472033 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     obj, end = self.raw_decode(s, idx=_w(s, 0).end()), referer: http://localhost/
+[Tue Jul 22 18:12:42.472080 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 383, in raw_decode, referer: http://localhost/
+[Tue Jul 22 18:12:42.472103 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215:     raise ValueError("No JSON object could be decoded"), referer: http://localhost/
+[Tue Jul 22 18:12:42.472121 2014] [cgi:error] [pid 16870] [client ::1:58252] AH01215: ValueError: No JSON object could be decoded, referer: http://localhost/
+[Tue Jul 22 18:14:23.674569 2014] [cgi:error] [pid 16870] [client ::1:58275] Options ExecCGI is off in this directory: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/cgi-bin-writesettingsdefaults.py, referer: http://localhost/cgi-bin/readsettings.py

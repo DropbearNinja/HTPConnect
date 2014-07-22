@@ -43,12 +43,12 @@ function AddRow() {
     
     var element2 = document.createElement("input");
     element2.type = "text";
-    element2.name="Key" +  rowCount;
+    element2.name="HostName" +  rowCount;
     cell2.appendChild(element2);
     
     var element3 = document.createElement("input");
     element3.type = "text";
-    element3.name="Value" +  rowCount;
+    element3.name="HostAddress" +  rowCount;
     cell3.appendChild(element3);
     
     cell4.innerHTML = "<a href='#' onclick='DeleteRow(\"Row"+ rowCount + "\")'><span class='oi' data-glyph='delete' title='Remove Row' aria-hidden='true' style='color:white;font-size:13px;'></span></a>";

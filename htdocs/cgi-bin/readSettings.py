@@ -6,7 +6,7 @@ from urllib import urlencode
 import os, os.path
 
 
-print 'Content-Type:application/json\n'
+print 'Content-Type:text/html\n'
 
 def cgiFieldStorageToDict(fieldStorage):
     """ Get a plain dictionary rather than the '.value' system used by the
@@ -24,12 +24,11 @@ def readFile():
     if os.path.isfile(filepath):
         with open(filepath, 'r') as inifile:
             json_data = json.load(inifile)
-            
             print json.dumps(json_data)
             #print str_data
 
     else:
-        print "{'Settings': 'Not Found'}"
+        print '{"MenuBgColour": "#009300", "MenuTextColour": "#ffffff"}'
 #print filepath
 
 main()
