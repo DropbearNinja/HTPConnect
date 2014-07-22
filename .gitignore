@@ -12,3 +12,6 @@ ehthumbs.db
 Thumbs.db
 *.log
 *.xcworkspace
+logs/error.log
+logs/httpd.pid
+logs/access.log
