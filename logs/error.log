@@ -447,3 +447,18 @@ otice] Child 5768: Child process is running
 [Tue Jul 22 15:59:34 2014] [notice] Child 5768: Child process is exiting
 [Tue Jul 22 15:59:34 2014] [notice] Parent: Child process exited successfully.
 >>>>>>> FETCH_HEAD
+[Tue Jul 22 17:39:54.022397 2014] [core:warn] [pid 16757] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jul 22 17:39:54.023392 2014] [mpm_prefork:notice] [pid 16757] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Tue Jul 22 17:39:54.023429 2014] [core:notice] [pid 16757] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Tue Jul 22 17:40:01.181418 2014] [proxy:error] [pid 16758] (61)Connection refused: AH00957: HTTP: attempt to connect to 192.168.0.53:8083 (192.168.0.53) failed
+[Tue Jul 22 17:40:01.181576 2014] [proxy:error] [pid 16758] AH00959: ap_proxy_connect_backend disabling worker for (192.168.0.53) for 60s
+[Tue Jul 22 17:40:01.181588 2014] [proxy_http:error] [pid 16758] [client ::1:57769] AH01114: HTTP: failed to make connection to backend: 192.168.0.53, referer: http://localhost/
+[Tue Jul 22 17:40:10.517847 2014] [core:warn] [pid 16794] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jul 22 17:40:10.519102 2014] [mpm_prefork:notice] [pid 16794] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Tue Jul 22 17:40:10.519143 2014] [core:notice] [pid 16794] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Tue Jul 22 17:40:25.405022 2014] [proxy:error] [pid 16808] (61)Connection refused: AH00957: HTTP: attempt to connect to 192.168.0.53:8083 (192.168.0.53) failed
+[Tue Jul 22 17:40:25.405064 2014] [proxy:error] [pid 16808] AH00959: ap_proxy_connect_backend disabling worker for (192.168.0.53) for 60s
+[Tue Jul 22 17:40:25.405074 2014] [proxy_http:error] [pid 16808] [client ::1:57792] AH01114: HTTP: failed to make connection to backend: 192.168.0.53, referer: http://localhost/
+[Tue Jul 22 17:40:46.780331 2014] [core:warn] [pid 16851] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jul 22 17:40:46.781472 2014] [mpm_prefork:notice] [pid 16851] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Tue Jul 22 17:40:46.781532 2014] [core:notice] [pid 16851] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
