@@ -181,6 +181,7 @@ otice] Child 3676: Child process is running
 [Tue Jul 22 14:58:03.454972 2014] [core:notice] [pid 9447] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
 [Tue Jul 22 14:58:04.738385 2014] [core:crit] [pid 9448] (13)Permission denied: [client ::1:54027] AH00529: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/' is executable
 [Tue Jul 22 14:58:05.521320 2014] [core:crit] [pid 9448] (13)Permission denied: [client ::1:54027] AH00529: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/' is executable
+<<<<<<< HEAD
 [Tue Jul 22 15:03:26.366067 2014] [proxy:error] [pid 9448] (70007)The timeout specified has expired: AH00957: HTTP: attempt to connect to 192.168.1.3:8081 (192.168.1.3) failed
 [Tue Jul 22 15:03:26.366590 2014] [proxy:error] [pid 9448] AH00959: ap_proxy_connect_backend disabling worker for (192.168.1.3) for 60s
 [Tue Jul 22 15:03:26.366606 2014] [proxy_http:error] [pid 9448] [client ::1:54101] AH01114: HTTP: failed to make connection to backend: 192.168.1.3, referer: http://localhost/
@@ -400,3 +401,49 @@ otice] Child 3676: Child process is running
 [Tue Jul 22 17:23:48.036636 2014] [cgi:error] [pid 12557] [client ::1:57510] AH01215:                                                                      ^, referer: http://localhost/content/settings.html
 [Tue Jul 22 17:23:48.036650 2014] [cgi:error] [pid 12557] [client ::1:57510] AH01215: SyntaxError: invalid syntax, referer: http://localhost/content/settings.html
 [Tue Jul 22 17:23:48.037798 2014] [cgi:error] [pid 12557] [client ::1:57510] End of script output before headers: writeSettings.py, referer: http://localhost/content/settings.html
+=======
+[Tue Jul 22 15:42:12 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
+[Tue Jul 22 15:42:12 2014] [notice] Server built: Jul 10 2013 01:52:12
+[Tue Jul 22 15:42:12 2014] [notice] Parent: Created child process 5768
+Apache server interrupted...
+otice] Child 5768: Child process is running
+[Tue Jul 22 15:42:12 2014] [notice] Child 5768: Acquired the start mutex.
+[Tue Jul 22 15:42:12 2014] [notice] Child 5768: Starting 64 worker threads.
+[Tue Jul 22 15:42:12 2014] [notice] Child 5768: Starting thread to listen on port 80.
+[Tue Jul 22 15:42:19 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 15:42:52 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:43:02 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:43:38 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:48:25 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:48:32 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:51:40 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:52:09 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:53:21 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/setting.html
+[Tue Jul 22 15:53:27 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:53:33 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:53:33 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:54:17 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:54:17 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:54:37 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:54:37 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:55:28 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:55:29 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:56:35 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:56:36 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:57:14 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:57:14 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:57:48 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:57:49 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:57:59 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:57:59 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:58:20 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:58:21 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:59:18 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/content/..js, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:59:18 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 15:59:32 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jul 22 15:59:32 2014] [notice] Child 5768: Exit event signaled. Child process is ending.
+[Tue Jul 22 15:59:33 2014] [notice] Child 5768: Released the start mutex
+[Tue Jul 22 15:59:34 2014] [notice] Child 5768: All worker threads have exited.
+[Tue Jul 22 15:59:34 2014] [notice] Child 5768: Child process is exiting
+[Tue Jul 22 15:59:34 2014] [notice] Parent: Child process exited successfully.
+>>>>>>> FETCH_HEAD
