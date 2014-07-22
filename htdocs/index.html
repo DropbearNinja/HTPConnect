@@ -4,14 +4,15 @@
 <title>HTPConnect</title>
 
 		<link href="/css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/normalize.css">
+        <link href="/css/normalize.css" rel="stylesheet">
+		<link href="/fonts/open-iconic.css" rel="stylesheet">
 		
 		<!--Menu-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
         <script src="/js/vendor/modernizr.custom.71422.js"></script>
 		<script src="/js/pushy.js"></script>
         <script src="/js/menu.js"></script>
-        <script src="/js/settings.js"></script>
+
 		<script src="/js/jscolor.js"></script>
 		
 <script>
@@ -35,12 +36,13 @@ $( document ).ready(function() {
 					<td><a href="#" onclick="LoadSB()">SickBeard</a></td>
 					<td><a href="#" onclick="LoadSAB()">sabnzbd</a></td>
 					<td><a href="#" onclick="LoadCP()">Couchpotato</a></td>
-					<td><a href="# onclick="LoadXBMC()">XBMC</a></td>
+					<td><a href="#" onclick="LoadXBMC()">XBMC</a></td>
 				</tr>
 			</table>
 			<table id="settingsmenu">
 				<tr>
-					<td><a href="#" onclick="LoadSettings()"><img src="/images/settings.gif" height="18" width="18"></a></td>
+					<td><a href="#" onclick="LoadLanding()"><span class="oi" data-glyph="home" title="Home" aria-hidden="true"></span></a></td>
+					<td><a href="#" onclick="LoadSettings()"><span class="oi" data-glyph="cog" title="Settings" aria-hidden="true"></span></a></td>
 				</tr>
 			</table>
 		
@@ -54,18 +56,11 @@ $( document ).ready(function() {
 		<!-- Your Content -->	
 		
 			<!-- Menu Button  -->
-		    <div class="menu-btn"><img src="/images/menu.gif" height="18" width="18"></div>
+		    <div class="menu-btn"><span class="oi" data-glyph="menu" title="Menu" aria-hidden="true" style="font-size:16px;margin-top:5px;"></span></div>
 
 			<!-- Frame -->
-			<iframe id="myiframe" src="" border="0"><div id="divpage"></div></iframe> 
+			<iframe id="myiframe" src="/content/landing.html" border="0"></div></iframe> 
 			
-			
-
-			<!-- landing -->
-			<div id="landing">
-				<div id="heading">WELCOME</div><br>
-				<div id="subtitle">HTPConnect</div>
-			</div>
 			
 
 		</div>

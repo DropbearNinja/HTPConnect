@@ -109,3 +109,52 @@ otice] Child 1968: Child process is running
 [Tue Jul 22 12:23:50 2014] [notice] Child 1968: All worker threads have exited.
 [Tue Jul 22 12:23:50 2014] [notice] Child 1968: Child process is exiting
 [Tue Jul 22 12:23:51 2014] [notice] Parent: Child process exited successfully.
+[Tue Jul 22 13:16:26 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
+[Tue Jul 22 13:16:26 2014] [notice] Server built: Jul 10 2013 01:52:12
+[Tue Jul 22 13:16:26 2014] [notice] Parent: Created child process 3676
+Apache server interrupted...
+otice] Child 3676: Child process is running
+[Tue Jul 22 13:16:26 2014] [notice] Child 3676: Acquired the start mutex.
+[Tue Jul 22 13:16:26 2014] [notice] Child 3676: Starting 64 worker threads.
+[Tue Jul 22 13:16:26 2014] [notice] Child 3676: Starting thread to listen on port 80.
+[Tue Jul 22 13:16:30 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/favicon.ico
+[Tue Jul 22 13:17:33 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/favicon.ico
+[Tue Jul 22 13:37:24 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:40:17 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:42:21 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:42:53 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:44:41 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:45:24 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:47:07 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 13:47:17 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 13:47:32 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 13:48:00 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 13:48:04 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/content/settings.html
+[Tue Jul 22 13:48:21 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:48:45 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:49:06 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:49:33 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:50:22 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:50:33 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:52:15 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:54:50 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:55:07 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:55:11 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:55:32 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:55:44 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:56:06 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:57:55 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:58:00 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:59:51 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 13:59:59 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 14:00:05 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 14:00:12 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 14:00:20 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 14:00:33 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 14:02:05 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Tue Jul 22 14:02:25 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jul 22 14:02:25 2014] [notice] Child 3676: Exit event signaled. Child process is ending.
+[Tue Jul 22 14:02:26 2014] [notice] Child 3676: Released the start mutex
+[Tue Jul 22 14:02:27 2014] [notice] Child 3676: All worker threads have exited.
+[Tue Jul 22 14:02:27 2014] [notice] Child 3676: Child process is exiting
+[Tue Jul 22 14:02:27 2014] [notice] Parent: Child process exited successfully.

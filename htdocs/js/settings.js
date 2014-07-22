@@ -28,7 +28,7 @@ function AddRow() {
     element3.name="Value" +  rowCount;
     cell3.appendChild(element3);
     
-    cell4.innerHTML = "<a href='#' onclick='DeleteRow(\"Row"+ rowCount + "\")'><img src='/images/delete.gif' height='15' width='15'></a>";
+    cell4.innerHTML = "<a href='#' onclick='DeleteRow(\"Row"+ rowCount + "\")'><span class='oi' data-glyph='delete' title='Remove Row' aria-hidden='true' style='color:white;font-size:13px;'></span></a>";
 }
 
 function DeleteRow(rowID) {
