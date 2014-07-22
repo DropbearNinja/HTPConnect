@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/Python27
 
 import cgi
 import json
