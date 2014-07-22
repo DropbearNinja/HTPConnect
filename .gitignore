@@ -16,3 +16,5 @@ logs/error.log
 logs/httpd.pid
 logs/access.log
 *.log
+logs/access.log
+logs/error.log

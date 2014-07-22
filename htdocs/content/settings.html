@@ -16,6 +16,9 @@
                              
                              document.getElementById("MenuBgColour").value = window.GlobalSettings['MenuBgColour'];
                              document.getElementById("MenuTextColour").value = window.GlobalSettings['MenuTextColour'];
+							 document.getElementById("MenuHoverColour").value = window.GlobalSettings['MenuHoverColour'];
+							 document.getElementById("PageBackground").value = window.GlobalSettings['PageBackground'];
+							 document.getElementById("PageText").value = window.GlobalSettings['PageText'];
                              
                              });
         </script>
@@ -23,7 +26,6 @@
             <form action="/cgi-bin/writeSettings.py" method="POST">
 			<div id="settings">
 				<div style="font-size: 40px">SETTINGS</div><br>
-				<a id="exit"; href="/exit">Shutdown Server</a><a id="restart"; href="/restart">Restart Server</a>
 				<br>
 				<table id="settingstable" class="input-list glow clearfix">
 					<tr id="Row0">
@@ -52,6 +54,24 @@
 						<td></td>
 						<td>Menu Text:</td>
 						<td><input type='color' name='MenuTextColour' id='MenuTextColour' style="width:100%;height:16px"/></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Menu Hover:</td>
+						<td><input type='color' name='MenuHoverColour' id='MenuHoverColour' style="width:100%;height:16px"/></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Page Background:</td>
+						<td><input type='color' name='PageBackground' id='PageBackground' style="width:100%;height:16px"/></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Page Text:</td>
+						<td><input type='color' name='PageText' id='PageText' style="width:100%;height:16px"/></td>
 						<td></td>
 					</tr>
                     <tr>

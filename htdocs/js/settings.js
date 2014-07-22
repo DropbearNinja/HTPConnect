@@ -66,4 +66,22 @@ function ChangeColours() {
     //alert(window.GlobalSettings["MenuBgColour"]);
     $(".pushy").css("background", window.GlobalSettings['MenuBgColour']);
     $(".pushy a").css("color", window.GlobalSettings['MenuTextColour']);
+	$(".pushy a").mouseenter(function() {
+		$(this).css("background", window.GlobalSettings['MenuHoverColour']);
+		}).mouseleave(function() {
+		$(this).css("background", window.GlobalSettings['MenuBgColour']);
+	});
+	
+	
+	
+	$(".menu-btn").css("background", window.GlobalSettings['MenuBgColour']);
+    $(".menu-btn").css("color", window.GlobalSettings['MenuTextColour']);
+	$(".menu-btn").mouseenter(function() {
+		$(this).css("background", window.GlobalSettings['MenuHoverColour']);
+		}).mouseleave(function() {
+		$(this).css("background", window.GlobalSettings['MenuBgColour']);
+	});
+	
+	$("#settings").css("color", window.GlobalSettings['PageText']);
+	$("body").css("background-color", window.GlobalSettings['PageBackground']);
 }
