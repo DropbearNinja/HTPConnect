@@ -158,3 +158,26 @@ otice] Child 3676: Child process is running
 [Tue Jul 22 14:02:27 2014] [notice] Child 3676: All worker threads have exited.
 [Tue Jul 22 14:02:27 2014] [notice] Child 3676: Child process is exiting
 [Tue Jul 22 14:02:27 2014] [notice] Parent: Child process exited successfully.
+[Tue Jul 22 14:48:19.185162 2014] [core:warn] [pid 9173] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jul 22 14:48:19.186235 2014] [mpm_prefork:notice] [pid 9173] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Tue Jul 22 14:48:19.186323 2014] [core:notice] [pid 9173] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Tue Jul 22 14:48:26.486006 2014] [autoindex:error] [pid 9174] [client ::1:53978] AH01276: Cannot serve directory /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/: No matching DirectoryIndex (index.htm) found, and server-generated directory index forbidden by Options directive
+[Tue Jul 22 14:51:27.585265 2014] [core:crit] [pid 9175] (13)Permission denied: [client ::1:53994] AH00529: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/' is executable
+[Tue Jul 22 14:51:54.085864 2014] [core:warn] [pid 9310] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jul 22 14:51:54.086859 2014] [mpm_prefork:notice] [pid 9310] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Tue Jul 22 14:51:54.086897 2014] [core:notice] [pid 9310] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Tue Jul 22 14:51:56.049279 2014] [core:crit] [pid 9311] (13)Permission denied: [client ::1:53997] AH00529: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/' is executable
+[Tue Jul 22 14:51:56.976152 2014] [core:crit] [pid 9311] (13)Permission denied: [client ::1:53997] AH00529: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/' is executable
+[Tue Jul 22 14:51:58.031166 2014] [core:warn] [pid 9328] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jul 22 14:51:58.032285 2014] [mpm_prefork:notice] [pid 9328] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Tue Jul 22 14:51:58.032326 2014] [core:notice] [pid 9328] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Tue Jul 22 14:55:18.857023 2014] [core:crit] [pid 9329] (13)Permission denied: [client ::1:54005] AH00529: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/' is executable
+[Tue Jul 22 14:55:36.588595 2014] [autoindex:error] [pid 9330] [client ::1:54007] AH01276: Cannot serve directory /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/: No matching DirectoryIndex (index.htm) found, and server-generated directory index forbidden by Options directive
+[Tue Jul 22 14:56:01.437187 2014] [core:warn] [pid 9408] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jul 22 14:56:01.438606 2014] [mpm_prefork:notice] [pid 9408] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Tue Jul 22 14:56:01.438709 2014] [core:notice] [pid 9408] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Tue Jul 22 14:58:03.453857 2014] [core:warn] [pid 9447] AH00098: pid file /private/var/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jul 22 14:58:03.454931 2014] [mpm_prefork:notice] [pid 9447] AH00163: Apache/2.4.9 (Unix) configured -- resuming normal operations
+[Tue Jul 22 14:58:03.454972 2014] [core:notice] [pid 9447] AH00094: Command line: '/usr/sbin/httpd -f /Users/davidpearce/Dropbox/Hobby/HTPConnect/conf/httpd-osx.conf'
+[Tue Jul 22 14:58:04.738385 2014] [core:crit] [pid 9448] (13)Permission denied: [client ::1:54027] AH00529: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/' is executable
+[Tue Jul 22 14:58:05.521320 2014] [core:crit] [pid 9448] (13)Permission denied: [client ::1:54027] AH00529: /Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/Users/davidpearce/Dropbox/Hobby/HTPConnect/htdocs/' is executable
