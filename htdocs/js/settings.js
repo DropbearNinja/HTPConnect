@@ -85,3 +85,21 @@ function ChangeColours() {
 	$("#settings").css("color", window.GlobalSettings['PageText']);
 	$("body").css("background-color", window.GlobalSettings['PageBackground']);
 }
+
+function ShowMenuItemsSettings() {
+	$("#menuitems").css("display","inline");
+	$("#colours").css("display","none");
+	$("#acknowledgements").css("display","none");
+}
+
+function ShowColourSettings() {
+	$("#menuitems").css("display","none");
+	$("#colours").css("display","inline");
+	$("#acknowledgements").css("display","none");
+}
+
+function ShowAcknowledgements() {
+	$("#menuitems").css("display","none");
+	$("#colours").css("display","none");
+	$("#acknowledgements").css("display","inline");
+}

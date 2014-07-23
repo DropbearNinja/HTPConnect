@@ -17,32 +17,8 @@
 	font-size: 20px;
 }
 
-#settings {
-	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-	position: absolute;
-    width:100%; 
-	top: 5%;
-	text-align: center;
-	color:white;
-	z-index: 5;
-	
-}
 
-#settingsdisplay {
-	
-}
 
-.colourinput {
-	width:25px;
-	height:25px;
-	color:#000000;
-	padding:0px;
-	border-radius:3px;
-	border-width:0px;
-	outline-width:0px;
-
-	
-}
 
 /* dynamic frame */
 
