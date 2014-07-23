@@ -1,42 +1,45 @@
-[Tue Jul 22 19:23:09.294434 2014] [core:warn] [pid 8820:tid 324] AH00117: Ignoring deprecated use of DefaultType in line 89 of V:/HTPC/HTPConnect/conf/windows_httpd.conf.
-[Tue Jul 22 19:23:09.321487 2014] [mpm_winnt:notice] [pid 8820:tid 324] AH00455: Apache/2.4.10 (Win64) configured -- resuming normal operations
-[Tue Jul 22 19:23:09.322535 2014] [mpm_winnt:notice] [pid 8820:tid 324] AH00456: Apache Lounge VC11 Server built: Jul 17 2014 12:58:29
-[Tue Jul 22 19:23:09.323515 2014] [core:notice] [pid 8820:tid 324] AH00094: Command line: 'httpd -d V:/HTPC/HTPConnect'
-[Tue Jul 22 19:23:09.329157 2014] [mpm_winnt:notice] [pid 8820:tid 324] AH00418: Parent: Created child process 8880
-[Tue Jul 22 19:23:09.604927 2014] [core:warn] [pid 8880:tid 304] AH00117: Ignoring deprecated use of DefaultType in line 89 of V:/HTPC/HTPConnect/conf/windows_httpd.conf.
+[Wed Jul 23 14:03:29 2014] [notice] Digest: generating secret for digest authentication ...
+[Wed Jul 23 14:03:29 2014] [notice] Digest: done
+[Wed Jul 23 14:03:29 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
+[Wed Jul 23 14:03:29 2014] [notice] Server built: Jul 10 2013 01:52:12
+[Wed Jul 23 14:03:29 2014] [notice] Parent: Created child process 2840
 Apache server interrupted...
-014] [core:warn] [pid 8880:tid 304] AH00117: Ignoring deprecated use of DefaultType in line 89 of V:/HTPC/HTPConnect/conf/windows_httpd.conf.
-[Tue Jul 22 19:23:09.694028 2014] [mpm_winnt:notice] [pid 8880:tid 304] AH00354: Child: Starting 64 worker threads.
-[Tue Jul 22 19:23:16.485483 2014] [cgi:error] [pid 8880:tid 952] (OS 2)The system cannot find the file specified.  : [client ::1:57852] couldn't create child process: 720002: readSettings.py, referer: http://localhost/
-[Tue Jul 22 19:23:16.485483 2014] [cgi:error] [pid 8880:tid 952] (OS 2)The system cannot find the file specified.  : [client ::1:57852] AH01223: couldn't spawn child process: V:/HTPC/HTPConnect/htdocs/cgi-bin/readSettings.py, referer: http://localhost/
-[Tue Jul 22 19:23:34.475630 2014] [mpm_winnt:notice] [pid 8820:tid 324] AH00422: Parent: Received shutdown signal -- Shutting down the server.
-[Tue Jul 22 19:23:36.478552 2014] [mpm_winnt:notice] [pid 8880:tid 304] AH00364: Child: All worker threads have exited.
-[Tue Jul 22 19:23:36.498490 2014] [mpm_winnt:notice] [pid 8820:tid 324] AH00430: Parent: Child process 8880 exited successfully.
-[Tue Jul 22 19:23:38.295605 2014] [mpm_winnt:notice] [pid 5052:tid 296] AH00455: Apache/2.4.10 (Win64) configured -- resuming normal operations
-[Tue Jul 22 19:23:38.297607 2014] [mpm_winnt:notice] [pid 5052:tid 296] AH00456: Apache Lounge VC11 Server built: Jul 17 2014 12:58:29
-[Tue Jul 22 19:23:38.298608 2014] [core:notice] [pid 5052:tid 296] AH00094: Command line: 'httpd -d V:/HTPC/HTPConnect'
-[Tue Jul 22 19:23:38.304611 2014] [mpm_winnt:notice] [pid 5052:tid 296] AH00418: Parent: Created child process 936
+otice] Digest: generating secret for digest authentication ...
+[Wed Jul 23 14:03:30 2014] [notice] Digest: done
+[Wed Jul 23 14:03:30 2014] [notice] Child 2840: Child process is running
+[Wed Jul 23 14:03:30 2014] [notice] Child 2840: Acquired the start mutex.
+[Wed Jul 23 14:03:30 2014] [notice] Child 2840: Starting 64 worker threads.
+[Wed Jul 23 14:03:30 2014] [notice] Child 2840: Starting thread to listen on port 80.
+[Wed Jul 23 14:03:36 2014] [crit] [client 127.0.0.1] configuration error:  couldn't perform authentication. AuthType not set!: /cgi-bin/readSettings.py, referer: http://localhost/
+[Wed Jul 23 14:03:36 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Wed Jul 23 14:03:38 2014] [crit] [client 127.0.0.1] configuration error:  couldn't perform authentication. AuthType not set!: /cgi-bin/readSettings.py, referer: http://localhost/
+[Wed Jul 23 14:03:38 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Wed Jul 23 14:03:41 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/favicon.ico
+[Wed Jul 23 14:06:10 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Wed Jul 23 14:06:10 2014] [notice] Child 2840: Exit event signaled. Child process is ending.
+[Wed Jul 23 14:06:11 2014] [notice] Child 2840: Released the start mutex
+[Wed Jul 23 14:06:12 2014] [notice] Child 2840: All worker threads have exited.
+[Wed Jul 23 14:06:12 2014] [notice] Child 2840: Child process is exiting
+[Wed Jul 23 14:06:12 2014] [notice] Parent: Child process exited successfully.
+[Wed Jul 23 14:06:13 2014] [notice] Digest: generating secret for digest authentication ...
+[Wed Jul 23 14:06:13 2014] [notice] Digest: done
+[Wed Jul 23 14:06:13 2014] [notice] Apache/2.2.25 (Win32) configured -- resuming normal operations
+[Wed Jul 23 14:06:13 2014] [notice] Server built: Jul 10 2013 01:52:12
+[Wed Jul 23 14:06:13 2014] [notice] Parent: Created child process 6884
 Apache server interrupted...
-014] [mpm_winnt:notice] [pid 936:tid 444] AH00354: Child: Starting 64 worker threads.
-[Tue Jul 22 19:23:41.242046 2014] [cgi:error] [pid 936:tid 940] (OS 2)The system cannot find the file specified.  : [client ::1:57868] couldn't create child process: 720002: readSettings.py, referer: http://localhost/
-[Tue Jul 22 19:23:41.243047 2014] [cgi:error] [pid 936:tid 940] (OS 2)The system cannot find the file specified.  : [client ::1:57868] AH01223: couldn't spawn child process: V:/HTPC/HTPConnect/htdocs/cgi-bin/readSettings.py, referer: http://localhost/
-[Tue Jul 22 19:23:43.854691 2014] [cgi:error] [pid 936:tid 948] (OS 2)The system cannot find the file specified.  : [client ::1:57866] couldn't create child process: 720002: readSettings.py, referer: http://localhost/content/settings.html
-[Tue Jul 22 19:23:43.855691 2014] [cgi:error] [pid 936:tid 948] (OS 2)The system cannot find the file specified.  : [client ::1:57866] AH01223: couldn't spawn child process: V:/HTPC/HTPConnect/htdocs/cgi-bin/readSettings.py, referer: http://localhost/content/settings.html
-[Tue Jul 22 19:30:25.204489 2014] [mpm_winnt:notice] [pid 5052:tid 296] AH00422: Parent: Received shutdown signal -- Shutting down the server.
-[Tue Jul 22 19:30:27.207692 2014] [mpm_winnt:notice] [pid 936:tid 444] AH00364: Child: All worker threads have exited.
-[Tue Jul 22 19:30:27.223557 2014] [mpm_winnt:notice] [pid 5052:tid 296] AH00430: Parent: Child process 936 exited successfully.
-[Tue Jul 22 19:30:43.431490 2014] [mpm_winnt:notice] [pid 8832:tid 420] AH00455: Apache/2.4.10 (Win64) configured -- resuming normal operations
-[Tue Jul 22 19:30:43.433493 2014] [mpm_winnt:notice] [pid 8832:tid 420] AH00456: Apache Lounge VC11 Server built: Jul 17 2014 12:58:29
-[Tue Jul 22 19:30:43.433493 2014] [core:notice] [pid 8832:tid 420] AH00094: Command line: 'httpd -d V:/HTPC/HTPConnect'
-[Tue Jul 22 19:30:43.442487 2014] [mpm_winnt:notice] [pid 8832:tid 420] AH00418: Parent: Created child process 2912
-Apache server interrupted...
-014] [mpm_winnt:notice] [pid 2912:tid 448] AH00354: Child: Starting 64 worker threads.
-[Tue Jul 22 19:30:48.368524 2014] [cgi:error] [pid 2912:tid 952] (OS 2)The system cannot find the file specified.  : [client ::1:58062] couldn't create child process: 720002: readSettings.py, referer: http://localhost/
-[Tue Jul 22 19:30:48.368524 2014] [cgi:error] [pid 2912:tid 952] (OS 2)The system cannot find the file specified.  : [client ::1:58062] AH01223: couldn't spawn child process: V:/HTPC/HTPConnect/htdocs/cgi-bin/readSettings.py, referer: http://localhost/
-[Tue Jul 22 19:30:57.066713 2014] [cgi:error] [pid 2912:tid 944] (OS 2)The system cannot find the file specified.  : [client ::1:58064] couldn't create child process: 720002: readSettings.py, referer: http://localhost/content/settings.html
-[Tue Jul 22 19:30:57.066713 2014] [cgi:error] [pid 2912:tid 944] (OS 2)The system cannot find the file specified.  : [client ::1:58064] AH01223: couldn't spawn child process: V:/HTPC/HTPConnect/htdocs/cgi-bin/readSettings.py, referer: http://localhost/content/settings.html
-[Tue Jul 22 19:31:19.069488 2014] [cgi:error] [pid 2912:tid 964] (OS 2)The system cannot find the file specified.  : [client ::1:58085] couldn't create child process: 720002: writeSettings.py, referer: http://localhost/content/settings.html
-[Tue Jul 22 19:31:19.070488 2014] [cgi:error] [pid 2912:tid 964] (OS 2)The system cannot find the file specified.  : [client ::1:58085] AH01223: couldn't spawn child process: V:/HTPC/HTPConnect/htdocs/cgi-bin/writeSettings.py, referer: http://localhost/content/settings.html
-[Tue Jul 22 19:31:34.232517 2014] [mpm_winnt:notice] [pid 8832:tid 420] AH00422: Parent: Received shutdown signal -- Shutting down the server.
-[Tue Jul 22 19:31:36.235522 2014] [mpm_winnt:notice] [pid 2912:tid 448] AH00364: Child: All worker threads have exited.
-[Tue Jul 22 19:31:36.252531 2014] [mpm_winnt:notice] [pid 8832:tid 420] AH00430: Parent: Child process 2912 exited successfully.
+otice] Digest: generating secret for digest authentication ...
+[Wed Jul 23 14:06:13 2014] [notice] Digest: done
+[Wed Jul 23 14:06:13 2014] [notice] Child 6884: Child process is running
+[Wed Jul 23 14:06:13 2014] [notice] Child 6884: Acquired the start mutex.
+[Wed Jul 23 14:06:13 2014] [notice] Child 6884: Starting 64 worker threads.
+[Wed Jul 23 14:06:13 2014] [notice] Child 6884: Starting thread to listen on port 80.
+[Wed Jul 23 14:06:16 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Wed Jul 23 14:06:42 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Wed Jul 23 14:08:24 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Wed Jul 23 14:08:46 2014] [error] [client 127.0.0.1] File does not exist: C:/Users/hal33h/Desktop/HTPConnect/htdocs/fonts/open-iconic.woff, referer: http://localhost/
+[Wed Jul 23 14:09:50 2014] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Wed Jul 23 14:09:50 2014] [notice] Child 6884: Exit event signaled. Child process is ending.
+[Wed Jul 23 14:09:51 2014] [notice] Child 6884: Released the start mutex
+[Wed Jul 23 14:09:52 2014] [notice] Child 6884: All worker threads have exited.
+[Wed Jul 23 14:09:52 2014] [notice] Child 6884: Child process is exiting
+[Wed Jul 23 14:09:52 2014] [notice] Parent: Child process exited successfully.
