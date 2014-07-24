@@ -13,37 +13,30 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
         <script src="/js/vendor/modernizr.custom.71422.js"></script>
 		<script src="/js/pushy.js"></script>
-        <script src="/js/menu.js"></script>
         <script src="/js/settings.js"></script>
-<script>
-
-$( document ).ready(function() {
-                    
-                    });
-
-</script>
+		<script>function LoadLink(link) {$("#myiframe").attr("src", link)}</script>
 		
 </head>
 
 
 <body>
-		
-        <!-- Pushy Menu -->
+
+	<!-- Pushy Menu -->
         <nav class="pushy pushy-close">
 		
 			<table id="menu">
 				<tr>
-					<td><a href="#" onclick="LoadLink1()">SickBeard</a></td>
-					<td><a href="#" onclick="LoadLink2()">sabnzbd</a></td>
-					<td><a href="#" onclick="LoadLink3()">Couchpotato</a></td>
-					<td><a href="#" onclick="LoadLink4()">XBMC</a></td>
+					<td><a href="#" onclick="LoadLink('/sickbeard/')">SB</a></td>
+					<td><a href="#" onclick="LoadLink('/sabnzbd/')">sabnzbd</a></td>
+					<td><a href="#" onclick="LoadLink('/couchpotato/')">Couchpotato</a></td>
+					<td><a href="#" onclick="LoadLink('/xbmc/')">XBMC</a></td>
 				</tr>
 			</table>
             
 			<table id="settingsmenu">
 				<tr>
-					<td><a href="#" onclick="LoadLanding()"><span class="oi" data-glyph="home" title="Home" aria-hidden="true"></span></a></td>
-					<td><a href="#" onclick="LoadSettings()"><span class="oi" data-glyph="cog" title="Settings" aria-hidden="true"></span></a></td>
+					<td><a href="#" onclick="LoadLink('/content/landing.html')"><span class="oi" data-glyph="home" title="Home" aria-hidden="true"></span></a></td>
+					<td><a href="#" onclick="LoadLink('/content/settings.html')"><span class="oi" data-glyph="cog" title="Settings" aria-hidden="true"></span></a></td>
 				</tr>
 			</table>
 		

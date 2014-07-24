@@ -25,7 +25,7 @@ $.ajax({
 
 function AddRow() {
     // Find a <table> element with id="myTable":
-    var table = document.getElementById("settingstable");
+    var table = document.getElementById("MenuItemsTable");
     var rowCount = table.rows.length - 1; // Table has additional row at bottom which shows the add button
     
     // Create an empty <tr> element and add it to the 1st position of the table:
@@ -40,22 +40,29 @@ function AddRow() {
     
     // Add some text to the new cells:
     // cell1 is blank
-    
+    var element1 = document.createElement("input");
+    element1.type = "text";
+    element1.name="MenuText" +  rowCount;
+	element1.placeholder = "Name";
+    cell1.appendChild(element1);
+	
     var element2 = document.createElement("input");
     element2.type = "text";
-    element2.name="HostName" +  rowCount;
+    element2.name="HostAddress" +  rowCount;
+	element2.placeholder = "Address";
     cell2.appendChild(element2);
     
     var element3 = document.createElement("input");
     element3.type = "text";
-    element3.name="HostAddress" +  rowCount;
+    element3.name="WebRoot" +  rowCount;
+	element3.placeholder = "Webroot";
     cell3.appendChild(element3);
     
     cell4.innerHTML = "<a href='#' onclick='DeleteRow(\"Row"+ rowCount + "\")'><span class='oi' data-glyph='delete' title='Remove Row' aria-hidden='true' style='color:white;font-size:13px;'></span></a>";
 }
 
 function DeleteRow(rowID) {
-    var table = document.getElementById("settingstable");
+    var table = document.getElementById("MenuItemsTable");
     var row = document.getElementById(rowID);
     
     table.deleteRow(row.rowIndex);
