@@ -1,18 +1,25 @@
-function LoadSB() {
-    $("#myiframe").attr("src", "/sickbeard");
+function LoadLink1() {
+    $("#myiframe").attr("src", "/link1/");
 }
 
-function LoadSAB() {
-    $("#myiframe").attr("src", "/sabnzbd");
+function LoadLink2() {
+    $("#myiframe").attr("src", "/link2/");
 }
 
-function LoadCP() {
-    $("#myiframe").attr("src", "/couchpotato");
+function LoadLink3() {
+    $("#myiframe").attr("src", "/link3/");
 }
                         
-function LoadXBMC() {
-    $("#myiframe").attr("src", "http://xbmc.org/");
+function LoadLink4() {
+    $("#myiframe").attr("src", "/link4/");
 }
+
+
+
+
+
+
+
 
 function LoadSettings() {
     $("#myiframe").attr("src", "/content/settings.html");
