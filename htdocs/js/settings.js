@@ -70,7 +70,7 @@ function DeleteRow(rowID) {
 
 
 function ChangeColours() {
-    //alert(window.GlobalSettings["MenuBgColour"]);
+
     $(".pushy").css("background", window.GlobalSettings['MenuBgColour']);
     $(".pushy a").css("color", window.GlobalSettings['MenuTextColour']);
 	$(".pushy a").mouseenter(function() {
@@ -89,24 +89,27 @@ function ChangeColours() {
 		$(this).css("background", window.GlobalSettings['MenuBgColour']);
 	});
 	
-	$("#settings").css("color", window.GlobalSettings['PageText']);
+	$("body").css("color", window.GlobalSettings['PageText']);
+	$("a").css("color", window.GlobalSettings['PageText']);
 	$("body").css("background-color", window.GlobalSettings['PageBackground']);
+	$(".oi").css("color", window.GlobalSettings['PageText']);
+
 }
 
 function ShowMenuItemsSettings() {
 	$("#menuitems").css("display","inline");
 	$("#colours").css("display","none");
-	$("#acknowledgements").css("display","none");
+	$("#misc").css("display","none");
 }
 
 function ShowColourSettings() {
 	$("#menuitems").css("display","none");
 	$("#colours").css("display","inline");
-	$("#acknowledgements").css("display","none");
+	$("#misc").css("display","none");
 }
 
-function ShowAcknowledgements() {
+function ShowMisc() {
 	$("#menuitems").css("display","none");
 	$("#colours").css("display","none");
-	$("#acknowledgements").css("display","inline");
+	$("#misc").css("display","inline");
 }

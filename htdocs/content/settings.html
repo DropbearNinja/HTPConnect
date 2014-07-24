@@ -2,116 +2,12 @@
 <head>
         
 		<link href="../css/style.css" rel="stylesheet">
+		<link href="../css/settings.css" rel="stylesheet">
         <link href="../css/normalize.css" rel="stylesheet">
 		<link href="../fonts/open-iconic.css" rel="stylesheet">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
         <script src="../js/vendor/modernizr.custom.71422.js"></script>
 		<script src="../js/settings.js"></script>
-		
-<style>
-
-#morelikeguidelines {
-	position:relative;
-	top:50px;
-	left:30%;
-	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-	color:white;
-	z-index: 5;
-	padding-bottom:100px;
-	line-height:150%;
-}
-
-#mainsettingsmenu {
-
-	padding-right:10px;
-	text-align:right;
-	position:absolute;
-	width:200px;
-	border-right: thick solid #ffffff;
-	
-}
-
-#mainsettingsmenu a:link,
-#mainsettingsmenu a:visited {
-	display: block;
-	color:#ffffff;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 5px;
-	text-decoration: none; 
-	margin-top:-20px;
-	margin-bottom:-20px;
-
-}
-
-#mainsettingsmenu a:hover {
-display:block;
-	background:#888888;
-	width: 200px;
-	height: 15px
-	margin-right: 15px;
-	text-decoration: none; 
-	
-}
-
-#menuitems {
-
-	text-align:left;
-	position:absolute;
-	left:210px;
-	display:none;
-	padding-left:10px;
-	border-left: thick solid #ffffff;
-}
-
-#colours {
-
-	text-align:left;
-	position:absolute;
-	left:210px;
-	display:none;
-	padding-left:10px;
-	border-left: thick solid #ffffff;
-}
-
-#acknowledgements {
-
-	text-align:left;
-	position:absolute;
-	left:210px;
-	display:none;
-	padding-left:10px;
-	border-left: thick solid #ffffff;
-	
-}
-
-.colourinput {
-	width:25px;
-	height:25px;
-	color:#000000;
-	padding:0px;
-	border-radius:3px;
-	border-width:0px;
-	outline-width:0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</style>
-		
-		
 		
 </head>
 
@@ -119,19 +15,12 @@ display:block;
 
 <script type="text/javascript">
 	$(document).ajaxStop(function () {
-		//alert(GlobalSettings['MenuBgColour']);
-		//ChangeColours();
-		
 		document.getElementById("MenuBgColour").value = window.GlobalSettings['MenuBgColour'];
 		document.getElementById("MenuTextColour").value = window.GlobalSettings['MenuTextColour'];
 		document.getElementById("MenuHoverColour").value = window.GlobalSettings['MenuHoverColour'];
 		document.getElementById("PageBackground").value = window.GlobalSettings['PageBackground'];
 		document.getElementById("PageText").value = window.GlobalSettings['PageText'];
-		
 	});
-	
-	
-	
 </script>
 
 <!-- settings -->
@@ -147,7 +36,7 @@ display:block;
 		<br>
 		<a href="#" onclick="ShowColourSettings()">Colour Scheme</a>
 		<br>
-		<a href="#" onclick="ShowAcknowledgements()">Thanks</a>
+		<a href="#" onclick="ShowMisc()">Misc</a>
 		<br>
 	</div>
 	
@@ -188,10 +77,18 @@ display:block;
 		
 	</div>
 	
-	<div id="acknowledgements">
-		<h1>THANKS</h1>
+	<div id="misc">
+		<h1>MISC</h1>
 		<br>
-		<a href="https://useiconic.com/open/" style="color:white;">Iconic</a>
+		This product uses:
+		<ul>
+			<li><a href="https://httpd.apache.org/" style="color:white;">Apache</a></li>
+			<li><a href="https://useiconic.com/open/" style="color:white;">Iconic</a></li>
+		</ul>
+		<br>
+		How to:
+		<br>
+		Sickbeard: 
 		<br>
 
 	</div>
